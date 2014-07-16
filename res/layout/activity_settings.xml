@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity" >
+
+    <CheckBox
+        android:id="@+id/displayGen3_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Gen3 Codes?" />
+
+    <EditText
+        android:id="@+id/DefaultStore_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Store# " />
+    <Button
+        android:id="@+id/SaveDefaultStore_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Default Store" />
+
+    <EditText
+        android:id="@+id/SearchStore_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search by Store# " />
+    <Button
+        android:id="@+id/SubmitSearchStore_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Store" />
+
+</LinearLayout>
