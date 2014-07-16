@@ -15,13 +15,15 @@
         android:id="@+id/DefaultStore_ET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Default Store# " />
+        android:hint="Default Store# "
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/SearchStore_ET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search by Store# " />
+        android:hint="Search by Store# "
+        android:inputType="number" />
     <Button
         android:id="@+id/SaveAndSubmitStore_Button"
         android:layout_width="wrap_content"

@@ -143,4 +143,15 @@
         android:layout_alignBottom="@+id/thirty"
         android:layout_alignLeft="@+id/gregorian_TV"
         android:ems="10" />
+
+    <TextView
+        android:id="@+id/displayStoreNumber_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/welcome"
+        android:layout_alignBottom="@+id/welcome"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/welcome"
+        android:text="" />
+
 </RelativeLayout>

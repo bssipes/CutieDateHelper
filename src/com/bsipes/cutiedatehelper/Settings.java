@@ -22,9 +22,9 @@ public class Settings extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
+		displayGen3_CB = (CheckBox) findViewById(R.id.displayGen3_CB);
 		defaultStore_ET = (EditText) findViewById(R.id.DefaultStore_ET);
 		searchStore_ET = (EditText) findViewById(R.id.SearchStore_ET);
-		
 		saveAndSubmitStore_Button = (Button) findViewById(R.id.SaveAndSubmitStore_Button);
 		saveAndSubmitStore_Button.setOnClickListener(this);
 		loadSavedPreferences();
@@ -41,10 +41,10 @@ public class Settings extends Activity implements OnClickListener {
 			displayGen3_CB.setChecked(false);
 		}
 
-		String searchStore = CDHSettings.getString("lastSearchedStore", "");
+		String searchStore = CDHSettings.getString("lastSearchedStore", " ");
 		searchStore_ET.setText(searchStore);
 
-		String defaultStore = CDHSettings.getString("defaultStore", "");
+		String defaultStore = CDHSettings.getString("defaultStore", " ");
 		defaultStore_ET.setText(defaultStore);
 
 	}

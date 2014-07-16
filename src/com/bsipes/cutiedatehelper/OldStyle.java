@@ -52,7 +52,7 @@ public class OldStyle extends Activity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_oldstyle);
 		main();
 	}
 
@@ -62,7 +62,7 @@ public class OldStyle extends Activity
         switch (item.getItemId()) 
         {
         case R.id.menu_settings:
-            Intent intent = new Intent(this,Settings.class);
+            Intent intent = new Intent(this, Settings.class);
             startActivity(intent);
             break;
         }

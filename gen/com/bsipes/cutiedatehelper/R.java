@@ -24,10 +24,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int DefaultStore_ET=0x7f080012;
-        public static final int SaveAndSubmitStore_Button=0x7f080014;
-        public static final int SearchStore_ET=0x7f080013;
-        public static final int displayGen3_CB=0x7f080011;
+        public static final int DefaultStore_ET=0x7f080013;
+        public static final int SaveAndSubmitStore_Button=0x7f080015;
+        public static final int SearchStore_ET=0x7f080014;
+        public static final int displayGen3_CB=0x7f080012;
+        public static final int displayStoreNumber_TV=0x7f080011;
         public static final int five=0x7f080005;
         public static final int five_TV=0x7f080006;
         public static final int fourteen=0x7f08000d;
@@ -36,7 +37,7 @@ public final class R {
         public static final int gregorian_TV=0x7f080002;
         public static final int julian=0x7f080003;
         public static final int julian_TV=0x7f080004;
-        public static final int menu_settings=0x7f080015;
+        public static final int menu_settings=0x7f080016;
         public static final int seven=0x7f080007;
         public static final int seven_TV=0x7f080008;
         public static final int seven_grillfood=0x7f080009;
