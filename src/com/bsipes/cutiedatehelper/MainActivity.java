@@ -14,9 +14,9 @@ public class MainActivity extends Activity {
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Bundle bundle = getIntent().getExtras();
-		store = bundle.getString("store");
+		//Bundle bundle = getIntent().getExtras();
+		//store = bundle.getString("store");
 		//displayStoreNumber_TV.setText(store);
-		gen3Mode = bundle.getBoolean("gen3Mode");
+		//gen3Mode = bundle.getBoolean("gen3Mode");
 	}//end onCreate
 }

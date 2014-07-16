@@ -41,10 +41,10 @@ public class Settings extends Activity implements OnClickListener {
 			displayGen3_CB.setChecked(false);
 		}
 
-		String searchStore = CDHSettings.getString("lastSearchedStore", " ");
+		String searchStore = CDHSettings.getString("lastSearchedStore", "");
 		searchStore_ET.setText(searchStore);
 
-		String defaultStore = CDHSettings.getString("defaultStore", " ");
+		String defaultStore = CDHSettings.getString("defaultStore", "");
 		defaultStore_ET.setText(defaultStore);
 
 	}
@@ -56,7 +56,7 @@ public class Settings extends Activity implements OnClickListener {
 		editor.putString(key, value);
 		editor.commit();
 	}
-	
+
 	private void savePreferences(String key, boolean value) {
 		SharedPreferences CDHSettings = getSharedPreferences(CDHLS,
 				Context.MODE_PRIVATE);
@@ -68,19 +68,22 @@ public class Settings extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		savePreferences("gen3Mode", displayGen3_CB.isChecked());
-		savePreferences("defaultStore", defaultStore_ET.getText().toString());
-		
-		//If no search store was entered, assume the user wants their default store
-		if (searchStore_ET.getText().toString() == "")
-		{
-			searchStore_ET.setText(defaultStore_ET.getText().toString());
+		if (defaultStore_ET.getText().toString().length() != 3) {
+			defaultStore_ET.setText("193");
 		}
-		
-		Intent intent = new Intent(this, MainActivity.class);
-		//pass the user data to the main activity
-		intent.putExtra("store", searchStore_ET.getText().toString());
-		intent.putExtra("gen3Mode",displayGen3_CB.isChecked());
+//TODO: Remove hardcoded default	
+		savePreferences("defaultStore", defaultStore_ET.getText().toString().trim());
+
+		// If no search store was entered, assume the user wants their default
+		if (searchStore_ET.getText().toString().trim().length() != 3) {			
+			searchStore_ET.setText(defaultStore_ET.getText().toString().trim());
+		}
+
+		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+		// pass the user data to the main activity
+		intent.putExtra("store", searchStore_ET.getText().toString().trim());
+		intent.putExtra("gen3Mode", displayGen3_CB.isChecked());
 		startActivity(intent);
-		finish();
+		return;
 	}
 }
