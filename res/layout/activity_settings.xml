@@ -16,11 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Default Store# " />
-    <Button
-        android:id="@+id/SaveDefaultStore_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save Default Store" />
 
     <EditText
         android:id="@+id/SearchStore_ET"
@@ -28,9 +23,9 @@
         android:layout_height="wrap_content"
         android:text="Search by Store# " />
     <Button
-        android:id="@+id/SubmitSearchStore_Button"
+        android:id="@+id/SaveAndSubmitStore_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit Store" />
+        android:text="Save Default Store and Submit Search" />
 
 </LinearLayout>

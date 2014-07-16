@@ -13,7 +13,7 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/displayedStoreNumber" />
+        android:text="@string/welcome_main" />
 <!--  -->
     <TextView
         android:id="@+id/gregorian"

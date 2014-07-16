@@ -3,7 +3,6 @@
 
     <string name="app_name">CutieDateHelper</string>
     <string name="menu_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="welcome_main">Welcome to the Cutie Date Helper by Ben Sipes</string>
     <string name="julian">Today\'s Julian Date Is: </string>
     <string name="gregorian">Today\'s Calendar Date Is: </string>
@@ -13,5 +12,6 @@
     <string name="ten">10 days (Hotzis): </string>
     <string name="fourteen">14 days (WallCooler): </string>
     <string name="thirty">30 days (Nemo): </string>
+    <string name="displayedStoreNumber">Displaying information for Store#</string>
 
 </resources>
