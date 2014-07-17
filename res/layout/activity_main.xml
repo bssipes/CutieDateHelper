@@ -8,150 +8,36 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
+<!--  Welcome Message -->
     <TextView
-        android:id="@+id/welcome"
+        android:id="@+id/gen2_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/displayedStoreNumber" />
-<!--  -->
+        android:text="@string/gen2_welcome" />
     <TextView
-        android:id="@+id/gregorian"
+        android:id="@+id/DisplayStoreNumber_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="40dp"
-        android:text="@string/gregorian" />
-    <TextView
-        android:id="@+id/gregorian_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/gregorian"
-        android:layout_marginLeft="22dp"
-        android:layout_toRightOf="@+id/gregorian"
-        android:ems="10" />
-<!--  -->
-    <TextView
-        android:id="@+id/julian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="80dp"
-        android:text="@string/julian" />
-    <TextView
-        android:id="@+id/julian_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/julian"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-<!--  -->
-    <TextView
-        android:id="@+id/five"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="120dp"
-        android:text="@string/five" />
-    <TextView
-        android:id="@+id/five_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/five"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-<!--  -->    
-    <TextView
-        android:id="@+id/seven"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="160dp"
-        android:text="@string/seven" />
-    <TextView
-        android:id="@+id/seven_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/seven"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-<!--  -->	
-    <TextView
-        android:id="@+id/seven_grillfood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="200dp"
-        android:text="@string/seven_grillfood" />
-    <TextView
-        android:id="@+id/seven_grillfood_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/seven_grillfood"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-<!--  -->    
-    <TextView
-        android:id="@+id/ten"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="240dp"
-        android:text="@string/ten" />
-    <TextView
-        android:id="@+id/ten_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ten"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-<!--  -->
-    <TextView
-        android:id="@+id/fourteen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="280dp"
-        android:text="@string/fourteen" />
-    <TextView
-        android:id="@+id/fourteen_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/fourteen"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-<!--  -->
-    <TextView
-        android:id="@+id/thirty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
-        android:layout_marginTop="320dp"
-        android:text="@string/thirty" />
-    <TextView
-        android:id="@+id/thirty_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/thirty"
-        android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />
-
-    <TextView
-        android:id="@+id/displayStoreNumber_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/welcome"
-        android:layout_alignBottom="@+id/welcome"
+        android:layout_alignBaseline="@+id/gen2_welcome"
+        android:layout_alignBottom="@+id/gen2_welcome"
         android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/welcome"
+        android:layout_toRightOf="@+id/gen2_welcome"
         android:text="" />
+<!--  Chili and Cheese -->
+	<TextView 
+	    android:id="@+id/gen2_chilicheese_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/gen2_welcome"
+	    android:layout_marginTop="40dp"
+	    android:text="@string/gen2_chilichese" />
+
+	<TextView
+	    android:id="@+id/gen2_chilicheese_date"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/gen2_chilicheese_label"
+	    android:layout_alignBottom="@+id/gen2_chilichese_label"
+	    android:layout_toRightOf="@+id/DisplayStoreNumber_TV" />
 
 </RelativeLayout>

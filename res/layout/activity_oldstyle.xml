@@ -10,17 +10,17 @@
     tools:context=".OldStyle" >
 
     <TextView
-        android:id="@+id/welcome"
+        android:id="@+id/welcome_old"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_main" />
+        android:text="@string/welcome_old" />
 <!--  -->
     <TextView
         android:id="@+id/gregorian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="40dp"
         android:text="@string/gregorian" />
     <TextView
@@ -36,8 +36,8 @@
         android:id="@+id/julian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="80dp"
         android:text="@string/julian" />
     <TextView
@@ -52,8 +52,8 @@
         android:id="@+id/five"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="120dp"
         android:text="@string/five" />
     <TextView
@@ -68,8 +68,8 @@
         android:id="@+id/seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="160dp"
         android:text="@string/seven" />
     <TextView
@@ -84,8 +84,8 @@
         android:id="@+id/seven_grillfood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="200dp"
         android:text="@string/seven_grillfood" />
     <TextView
@@ -100,8 +100,8 @@
         android:id="@+id/ten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="240dp"
         android:text="@string/ten" />
     <TextView
@@ -116,8 +116,8 @@
         android:id="@+id/fourteen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="280dp"
         android:text="@string/fourteen" />
     <TextView
@@ -132,8 +132,8 @@
         android:id="@+id/thirty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/welcome_old"
+        android:layout_below="@+id/welcome_old"
         android:layout_marginTop="320dp"
         android:text="@string/thirty" />
     <TextView
