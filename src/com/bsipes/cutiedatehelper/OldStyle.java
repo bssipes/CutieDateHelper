@@ -41,11 +41,14 @@ public class OldStyle extends Activity
 		TextView ten_TV = (TextView)findViewById(R.id.ten_TV);
 		ten_TV.setText(String.format("%03d", julian)+", "+String.format("%03d", (julian+2)%totalDays)+", "+String.format("%03d", (julian+10)%totalDays));
 
+		TextView thirteen_TV = (TextView)findViewById(R.id.thirteen_TV);
+		thirteen_TV.setText(String.format("%03d", (julian+1)%totalDays)+String.format("%03d", (julian+13)%totalDays));
+		
 		TextView fourteen_TV = (TextView)findViewById(R.id.fourteen_TV);
 		fourteen_TV.setText(String.format("%03d", (julian+1)%totalDays)+String.format("%03d", (julian+14)%totalDays));
 		
 		TextView thirty_TV = (TextView)findViewById(R.id.thirty_TV);
-		thirty_TV.setText(String.format("%03d", (julian+1)%totalDays)+String.format("%03d", (julian+30)%totalDays));
+		thirty_TV.setText(String.format("%03d", julian)+String.format("%03d", (julian+30)%totalDays));
 
 	}
 	@Override

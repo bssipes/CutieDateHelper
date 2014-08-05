@@ -38,6 +38,7 @@ public class MainActivity extends Activity
 		TextView gen2_grillfood_date = (TextView) findViewById(R.id.gen2_grillfood_date);
 		TextView gen2_hotzis_date = (TextView) findViewById(R.id.gen2_hotzis_date);
 		TextView gen2_wallcoolerburritos_date = (TextView) findViewById(R.id.gen2_wallcoolerburritos_date);
+		TextView gen2_wallcoolerhotpockets_date = (TextView) findViewById(R.id.gen2_wallcoolerhotpockets_date);
 		TextView gen2_nemo_date = (TextView) findViewById(R.id.gen2_nemo_date);
 //TODO:lookup the division number
 		int d = findDivision(store); //this is just a stub at the moment
@@ -49,6 +50,7 @@ public class MainActivity extends Activity
 //		gen2_grillfood_date.setText("");
 //		gen2_hotzis_date.setText("");
 //		gen2_wallcoolerburritos_date.setText("");
+//		gen2_wallcoolerhotpockets_date.setText("");
 //		gen2_nemo_date.setText("");
 		
 	}

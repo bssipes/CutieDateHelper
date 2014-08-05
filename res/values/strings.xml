@@ -12,6 +12,7 @@
     <string name ="seven_grillfood">7 days (GrillFood): </string>
     <string name="ten">10 days (Hotzis): </string>
     <string name="fourteen">14 days (WallCooler): </string>
+    <string name="thirteen">13 days (HotPockets): </string>
     <string name="thirty">30 days (Nemo): </string>
 
 <!--  The following strings are used in MainActivity (Gen2)-->
@@ -21,6 +22,7 @@
     <string name="gen2_grillfood">Backstock GrillFood</string>
     <string name="gen2_hotzis">Hotzis</string>
     <string name="gen2_wallcoolerburritos">WallCooler Burritos</string>
+    <string name="gen2_wallcoolerhotpockets">WallCooler Hot Pockets</string>
     <string name="gen2_nemo">Nemo Cakes</string>
 
 </resources>
