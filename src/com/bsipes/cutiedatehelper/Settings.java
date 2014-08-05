@@ -71,7 +71,7 @@ public class Settings extends Activity implements OnClickListener {
 		if (defaultStore_ET.getText().toString().length() != 3) {
 			defaultStore_ET.setText("193");
 		}
-//TODO: Remove hardcoded default	
+//TODO: Remove hardcoded default
 		savePreferences("defaultStore", defaultStore_ET.getText().toString().trim());
 
 		// If no search store was entered, assume the user wants their default

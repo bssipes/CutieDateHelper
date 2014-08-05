@@ -23,6 +23,7 @@ public class Division
 		gen2_nemo_offset = inNemo;
 	}
 	
+	public String getD()	{return divisionName;}
 	public int getCC()		{return gen2_chilicheese_offset;}
 	public int getWCP()		{return gen2_wallcoolerpizzas_offset;}
 	public int getGF()		{return gen2_grillfood_date_offset;}

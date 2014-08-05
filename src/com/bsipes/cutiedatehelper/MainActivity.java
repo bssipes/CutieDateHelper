@@ -1,8 +1,6 @@
 package com.bsipes.cutiedatehelper;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -13,7 +11,16 @@ public class MainActivity extends Activity
 	public String store; // set in onCreate
 	public boolean gen3Mode; // set in onCreate
 	TextView displayStoreNumber_TV;
+	Division STL = new Division("STL",5,7,7,7,14,13,30);
+	Division CAR = new Division("CAR",5,7,7,7,14,13,30);
+	Division WIC = new Division("WIC",5,7,7,7,14,13,30);
+	Division IA = new Division("IA",5,7,7,7,14,13,30);
+	Division ATL = new Division("ATL",5,7,10,7,14,13,30); //10 days for grillfood
+	Division PHO = new Division("PHO",5,7,7,10,14,13,30); //10 days for hotzi
+	Division KC = new Division("KC",5,7,7,10,14,13,30); //10 days for hotzi
 
+	Division OTHER = new Division("OTHER",5,7,10,10,14,13,30); //10 days for grillfood AND 10 days for hotzi
+	
 	public void main() 
 	{
 		GregorianCalendar gc = (GregorianCalendar) GregorianCalendar.getInstance();
