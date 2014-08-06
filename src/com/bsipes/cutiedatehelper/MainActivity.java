@@ -2,7 +2,6 @@ package com.bsipes.cutiedatehelper;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -40,10 +39,12 @@ public class MainActivity extends Activity
 		julian_TV.setText(String.valueOf(julian));
 
 		int totalDays = 365;
-		if (gc.isLeapYear(Calendar.YEAR)) {
+		if (gc.isLeapYear(Calendar.YEAR)) 
+		{
 			totalDays += 1;
-		setgen2Dates(julian);
+			setgen2Dates(julian);
 		}
+		
 	}
 	private void setgen2Dates(int julian) {
 		//declare all the textviews
@@ -81,6 +82,7 @@ public class MainActivity extends Activity
 		}
 		displayStoreNumber_TV = (TextView) findViewById(R.id.DisplayStoreNumber_TV);
 		displayStoreNumber_TV.setText(divisionName);
+		main();
 	}// end onCreate
 	
 	@Override
