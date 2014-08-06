@@ -41,7 +41,7 @@ public class Settings extends Activity implements OnClickListener {
 		} else {
 			displayGen3_CB.setChecked(false);
 		}
-		defaultDivision_S.setSelection(CDHSettings.getInt("defaultDivision", 4)); //4 for KC
+		defaultDivision_S.setSelection(CDHSettings.getInt("defaultDivision", 3)); //3 for KC
 	}
 	
 	private void savePreferences(String key, String value)	{
@@ -79,29 +79,29 @@ public class Settings extends Activity implements OnClickListener {
 		
 		//if search is at position 0, no search was entered, assume user wants default
 		if (searchDivision_S.getSelectedItemPosition() == 0)
-			{searchDivision_S.setSelection(defaultDivision_S.getSelectedItemPosition());}
+			{searchDivision_S.setSelection(defaultDivision_S.getSelectedItemPosition()+1);}
 		
 		//translate from the item position to readable text to display to user in MainActivity
 		switch (searchDivision_S.getSelectedItemPosition())
 		{
 		case 1:
-			intent.putExtra("divisionName", "ATL");
+			intent.putExtra("divisionName", "ATL"); break;
 		case 2:
-			intent.putExtra("divisionName", "CAR");
+			intent.putExtra("divisionName", "CAR"); break;
 		case 3:
-			intent.putExtra("divisionName", "IA (not Omaha)");
+			intent.putExtra("divisionName", "IA (not Omaha)"); break;
 		case 4:
-			intent.putExtra("divisionName", "KC");
+			intent.putExtra("divisionName", "KC"); break;
 		case 5:
-			intent.putExtra("divisionName", "PHO");
+			intent.putExtra("divisionName", "PHO"); break;
 		case 6:
-			intent.putExtra("divisionName", "STL");
+			intent.putExtra("divisionName", "STL"); break;
 		case 7:
-			intent.putExtra("divisionName", "WIC");
+			intent.putExtra("divisionName", "WIC"); break;
 		case 8:
-			intent.putExtra("divisionName", "OTHER");
-		default: //shouldn't ever hit the default. if it does, the if statement above isn't logically correct
-			intent.putExtra("divisionName", "ERROR");
+			intent.putExtra("divisionName", "OTHER"); break;
+		default: //shouldn't ever hit the default. if it does, the IF statement above isn't logically correct, or the switch isn't correct
+			intent.putExtra("divisionName", "ERROR"); 
 		}
 		startActivity(intent);
 		return;

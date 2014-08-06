@@ -8,7 +8,6 @@
 	<string name="division_prompt">Default Division</string>
 	<string name="search_prompt">Search By Division</string>
 	<string-array name="default_divisions_array">
-	    <item>Default Division</item>
         <item>ATL</item>
         <item>CAR</item>
         <item>IA (not Omaha)</item>

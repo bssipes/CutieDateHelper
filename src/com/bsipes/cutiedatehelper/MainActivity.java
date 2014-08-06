@@ -1,8 +1,14 @@
 package com.bsipes.cutiedatehelper;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Map;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends Activity 
@@ -10,6 +16,8 @@ public class MainActivity extends Activity
 	String divisionName; //set in onCreate
 	public boolean gen3Mode; // set in onCreate
 	TextView displayStoreNumber_TV;
+	HashMap<String, Division> divisions = new HashMap<String, Division>();
+	
 	//STL, CAR, WIC, and IA are all currently identical. May change in the future.
 	Division STL = new	Division("STL", 	5,7,7 ,7, 14,13,30);
 	Division CAR = new	Division("CAR", 	5,7,7 ,7, 14,13,30);
@@ -19,6 +27,7 @@ public class MainActivity extends Activity
 	Division PHO = new	Division("PHO", 	5,7,7 ,10,14,13,30); //10 days for hotzi
 	Division KC = new	Division("KC",		5,7,7 ,10,14,13,30); //10 days for hotzi
 	Division OTHER = new Division("OTHER",	5,7,10,10,14,13,30); //10 days for grillfood AND 10 days for hotzi
+	//divisions.put("STL", STL);
 	
 	public void main() 
 	{
@@ -66,4 +75,25 @@ public class MainActivity extends Activity
 		displayStoreNumber_TV.setText(divisionName);
 		gen3Mode = bundle.getBoolean("gen3Mode");
 	}// end onCreate
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item)
+	{
+        switch (item.getItemId()) 
+        {
+        case R.id.menu_settings:
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+            break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) 
+	{
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
 }
