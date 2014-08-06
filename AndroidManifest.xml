@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bsipes.cutiedatehelper"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -25,5 +25,4 @@
             android:name="com.bsipes.cutiedatehelper.Settings"
             android:label="Settings" />
     </application>
-
 </manifest>

@@ -66,30 +66,20 @@ public final class R {
         /**   The following strings are used in Settings
          */
         public static final int division_prompt=0x7f050002;
-        public static final int five=0x7f050007;
-        public static final int fourteen=0x7f05000b;
-        public static final int gen2_chilichese=0x7f05000f;
-        public static final int gen2_grillfood=0x7f050011;
-        public static final int gen2_hotzis=0x7f050012;
-        public static final int gen2_nemo=0x7f050015;
-        public static final int gen2_wallcoolerburritos=0x7f050013;
-        public static final int gen2_wallcoolerhotpockets=0x7f050014;
-        public static final int gen2_wallcoolerpizzas=0x7f050010;
+        public static final int gen2_chilichese=0x7f050007;
+        public static final int gen2_grillfood=0x7f050009;
+        public static final int gen2_hotzis=0x7f05000a;
+        public static final int gen2_nemo=0x7f05000d;
+        public static final int gen2_wallcoolerburritos=0x7f05000b;
+        public static final int gen2_wallcoolerhotpockets=0x7f05000c;
+        public static final int gen2_wallcoolerpizzas=0x7f050008;
+        public static final int gen2_welcome=0x7f050006;
+        public static final int gregorian=0x7f050005;
         /**   The following strings are used in MainActivity (Gen2)
          */
-        public static final int gen2_welcome=0x7f05000e;
-        public static final int gregorian=0x7f050006;
-        public static final int julian=0x7f050005;
+        public static final int julian=0x7f050004;
         public static final int menu_settings=0x7f050001;
         public static final int search_prompt=0x7f050003;
-        public static final int seven=0x7f050008;
-        public static final int seven_grillfood=0x7f050009;
-        public static final int ten=0x7f05000a;
-        public static final int thirteen=0x7f05000c;
-        public static final int thirty=0x7f05000d;
-        /**   The following strings are used in OldStyle and will be phased out
-         */
-        public static final int welcome_old=0x7f050004;
     }
     public static final class style {
         /** 

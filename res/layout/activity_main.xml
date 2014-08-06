@@ -15,15 +15,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gen2_welcome" />
+
     <TextView
         android:id="@+id/DisplayStoreNumber_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/gen2_welcome"
         android:layout_alignBottom="@+id/gen2_welcome"
-        android:layout_marginLeft="22dp"
+        android:layout_marginRight="10dp"
         android:layout_toRightOf="@+id/gen2_welcome"
-        android:text="store#here" />
+        android:text="divisionName here" />
     
 <!-- Today's dates -->
     <TextView

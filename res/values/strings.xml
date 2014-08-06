@@ -30,20 +30,10 @@
         <item>OTHER</item>
     </string-array>
 
-<!--  The following strings are used in OldStyle and will be phased out-->    
-    <string name="welcome_old">Welcome to the Cutie Date Helper by Ben Sipes</string>
-    <string name="julian">Today\'s Julian Date Is: </string>
-    <string name="gregorian">Today\'s Calendar Date Is: </string>
-    <string name="five">5 days (Chili): </string>
-    <string name="seven">7 days (WallCooler): </string>
-    <string name ="seven_grillfood">7 days (GrillFood): </string>
-    <string name="ten">10 days (Hotzis): </string>
-    <string name="fourteen">14 days (WallCooler): </string>
-    <string name="thirteen">13 days (HotPockets): </string>
-    <string name="thirty">30 days (Nemo): </string>
-
 <!--  The following strings are used in MainActivity (Gen2)-->
-    <string name="gen2_welcome">Displaying Gen2 information for Division: </string>
+	<string name="julian">Today\'s Julian Date Is: </string>
+    <string name="gregorian">Today\'s Calendar Date Is: </string>
+    <string name="gen2_welcome">Gen2 Information for Division: </string>
     <string name="gen2_chilichese">Chili and Cheese</string>
     <string name="gen2_wallcoolerpizzas">WallCooler Pizzas</string>
     <string name="gen2_grillfood">Backstock GrillFood</string>
