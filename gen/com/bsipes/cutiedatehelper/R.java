@@ -28,15 +28,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int DefaultDivision_S=0x7f090024;
+        public static final int DefaultDivision_S=0x7f090015;
         public static final int DisplayStoreNumber_TV=0x7f090001;
-        public static final int SaveAndSubmit_Button=0x7f090026;
-        public static final int SearchDivision_S=0x7f090025;
-        public static final int displayGen3_CB=0x7f090023;
-        public static final int five=0x7f090015;
-        public static final int five_TV=0x7f090016;
-        public static final int fourteen=0x7f09001f;
-        public static final int fourteen_TV=0x7f090020;
+        public static final int SaveAndSubmit_Button=0x7f090017;
+        public static final int SearchDivision_S=0x7f090016;
+        public static final int displayGen3_CB=0x7f090014;
         public static final int gen2_chilicheese_date=0x7f090007;
         public static final int gen2_chilicheese_label=0x7f090006;
         public static final int gen2_grillfood_date=0x7f09000b;
@@ -56,23 +52,11 @@ public final class R {
         public static final int gregorian_TV=0x7f090003;
         public static final int julian=0x7f090004;
         public static final int julian_TV=0x7f090005;
-        public static final int menu_settings=0x7f090027;
-        public static final int seven=0x7f090017;
-        public static final int seven_TV=0x7f090018;
-        public static final int seven_grillfood=0x7f090019;
-        public static final int seven_grillfood_TV=0x7f09001a;
-        public static final int ten=0x7f09001b;
-        public static final int ten_TV=0x7f09001c;
-        public static final int thirteen=0x7f09001d;
-        public static final int thirteen_TV=0x7f09001e;
-        public static final int thirty=0x7f090021;
-        public static final int thirty_TV=0x7f090022;
-        public static final int welcome_old=0x7f090014;
+        public static final int menu_settings=0x7f090018;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_oldstyle=0x7f030001;
-        public static final int activity_settings=0x7f030002;
+        public static final int activity_settings=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f080000;
