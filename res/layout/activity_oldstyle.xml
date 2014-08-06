@@ -113,7 +113,7 @@
         android:ems="10" />
 <!--  -->
     <TextView
-        android:id="@+id/fourteen"
+        android:id="@+id/thirteen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/welcome_old"
@@ -121,15 +121,15 @@
         android:layout_marginTop="280dp"
         android:text="@string/thirteen" />
     <TextView
-        android:id="@+id/fourteen_TV"
+        android:id="@+id/thirteen_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/fourteen"
+        android:layout_alignBottom="@+id/thirteen"
         android:layout_alignLeft="@+id/gregorian_TV"
-        android:ems="10" />    
+        android:ems="10" /> 
 <!--  -->
     <TextView
-        android:id="@+id/thirteen"
+        android:id="@+id/fourteen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/welcome_old"
@@ -137,10 +137,10 @@
         android:layout_marginTop="320dp"
         android:text="@string/fourteen" />
     <TextView
-        android:id="@+id/thirteen_TV"
+        android:id="@+id/fourteen_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/thirteen"
+        android:layout_alignBottom="@+id/fourteen"
         android:layout_alignLeft="@+id/gregorian_TV"
         android:ems="10" />    
 <!--  -->

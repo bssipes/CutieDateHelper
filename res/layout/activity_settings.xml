@@ -9,25 +9,25 @@
         android:id="@+id/displayGen3_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Display Gen3 Codes?" />
+        android:text="Display Gen3 Code Dates?" />
 
-    <EditText
-        android:id="@+id/DefaultStore_ET"
+    <Spinner
+        android:id="@+id/DefaultDivision_S"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Default Store# "
-        android:inputType="number" />
+        android:entries="@array/default_divisions_array"
+        android:prompt="@string/division_prompt" />"
 
-    <EditText
-        android:id="@+id/SearchStore_ET"
+    <Spinner
+        android:id="@+id/SearchDivision_S"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search by Store# "
-        android:inputType="number" />
+        android:entries="@array/search_divisions_array"
+        android:prompt="@string/search_prompt" />
     <Button
-        android:id="@+id/SaveAndSubmitStore_Button"
+        android:id="@+id/SaveAndSubmit_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save Default Store and Submit Search" />
+        android:text="Save Default and Submit Search" />
 
 </LinearLayout>

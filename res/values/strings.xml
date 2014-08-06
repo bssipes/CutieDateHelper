@@ -3,6 +3,34 @@
 
     <string name="app_name">CutieDateHelper</string>
     <string name="menu_settings">Settings</string>
+
+<!--  The following strings are used in Settings-->
+	<string name="division_prompt">Default Division</string>
+	<string name="search_prompt">Search By Division</string>
+	<string-array name="default_divisions_array">
+	    <item>Default Division</item>
+        <item>ATL</item>
+        <item>CAR</item>
+        <item>IA (not Omaha)</item>
+        <item>KC</item>
+        <item>PHO</item>
+        <item>STL</item>
+        <item>WIC</item>
+        <item>OTHER</item>
+    </string-array>
+    
+	<string-array name="search_divisions_array">
+	    <item>Search By Division</item>
+        <item>ATL</item>
+        <item>CAR</item>
+        <item>IA (not Omaha)</item>
+        <item>KC</item>
+        <item>PHO</item>
+        <item>STL</item>
+        <item>WIC</item>
+        <item>OTHER</item>
+    </string-array>
+
 <!--  The following strings are used in OldStyle and will be phased out-->    
     <string name="welcome_old">Welcome to the Cutie Date Helper by Ben Sipes</string>
     <string name="julian">Today\'s Julian Date Is: </string>
@@ -16,7 +44,7 @@
     <string name="thirty">30 days (Nemo): </string>
 
 <!--  The following strings are used in MainActivity (Gen2)-->
-    <string name="gen2_welcome">Displaying Gen2 information for Store#</string>
+    <string name="gen2_welcome">Displaying Gen2 information for Division: </string>
     <string name="gen2_chilichese">Chili and Cheese</string>
     <string name="gen2_wallcoolerpizzas">WallCooler Pizzas</string>
     <string name="gen2_grillfood">Backstock GrillFood</string>
