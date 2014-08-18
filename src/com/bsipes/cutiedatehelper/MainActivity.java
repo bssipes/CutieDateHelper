@@ -27,7 +27,6 @@ public class MainActivity extends Activity
 	Division PHO = new	Division("PHO", 	5,7,7 ,10,14,13,30); //10 days for hotzi
 	Division KC = new	Division("KC",		5,7,7 ,10,14,13,30); //10 days for hotzi
 	Division OTHER = new Division("OTHER",	5,7,10,10,14,13,30); //10 days for grillfood AND 10 days for hotzi
-	//divisions.put("STL", STL);
 	
 	public void main() 
 	{
@@ -112,6 +111,14 @@ public class MainActivity extends Activity
             Intent intent = new Intent(this, Settings.class);
             startActivity(intent);
             break;
+        case R.id.menu_about:
+        	Intent intent2 = new Intent(this, About.class);
+        	startActivity(intent2);
+        	break;
+        case R.id.menu_storeList:
+        	Intent intent3 = new Intent(this, StoreList.class);
+        	startActivity(intent3);
+        	break;
         }
         return super.onOptionsItemSelected(item);
     }

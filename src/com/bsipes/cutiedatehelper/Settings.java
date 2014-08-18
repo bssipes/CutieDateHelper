@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -105,5 +107,33 @@ public class Settings extends Activity implements OnClickListener {
 		}
 		startActivity(intent);
 		return;
+	}
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem item)
+	{
+        switch (item.getItemId()) 
+        {
+        case R.id.menu_settings:
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+            break;
+        case R.id.menu_about:
+        	Intent intent2 = new Intent(this, About.class);
+        	startActivity(intent2);
+        	break;
+        case R.id.menu_storeList:
+        	Intent intent3 = new Intent(this, StoreList.class);
+        	startActivity(intent3);
+        	break;
+        }
+        return super.onOptionsItemSelected(item);
+	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) 
+	{
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
 	}
 }

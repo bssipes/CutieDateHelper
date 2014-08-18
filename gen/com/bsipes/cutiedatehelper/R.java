@@ -28,58 +28,72 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int DefaultDivision_S=0x7f090015;
-        public static final int DisplayStoreNumber_TV=0x7f090001;
-        public static final int SaveAndSubmit_Button=0x7f090017;
-        public static final int SearchDivision_S=0x7f090016;
-        public static final int displayGen3_CB=0x7f090014;
-        public static final int gen2_chilicheese_date=0x7f090007;
-        public static final int gen2_chilicheese_label=0x7f090006;
-        public static final int gen2_grillfood_date=0x7f09000b;
-        public static final int gen2_grillfood_label=0x7f09000a;
-        public static final int gen2_hotzis_date=0x7f09000d;
-        public static final int gen2_hotzis_label=0x7f09000c;
-        public static final int gen2_nemo_date=0x7f090013;
-        public static final int gen2_nemo_label=0x7f090012;
-        public static final int gen2_wallcoolerburritos_date=0x7f09000f;
-        public static final int gen2_wallcoolerburritos_label=0x7f09000e;
-        public static final int gen2_wallcoolerhotpockets_date=0x7f090011;
-        public static final int gen2_wallcoolerhotpockets_label=0x7f090010;
-        public static final int gen2_wallcoolerpizzas_date=0x7f090009;
-        public static final int gen2_wallcoolerpizzas_label=0x7f090008;
-        public static final int gen2_welcome=0x7f090000;
-        public static final int gregorian=0x7f090002;
-        public static final int gregorian_TV=0x7f090003;
-        public static final int julian=0x7f090004;
-        public static final int julian_TV=0x7f090005;
-        public static final int menu_settings=0x7f090018;
+        public static final int DefaultDivision_S=0x7f090016;
+        public static final int DisplayStoreNumber_TV=0x7f090002;
+        public static final int SaveAndSubmit_Button=0x7f090018;
+        public static final int SearchDivision_S=0x7f090017;
+        public static final int about_greeting=0x7f090000;
+        public static final int displayGen3_CB=0x7f090015;
+        public static final int gen2_chilicheese_date=0x7f090008;
+        public static final int gen2_chilicheese_label=0x7f090007;
+        public static final int gen2_grillfood_date=0x7f09000c;
+        public static final int gen2_grillfood_label=0x7f09000b;
+        public static final int gen2_hotzis_date=0x7f09000e;
+        public static final int gen2_hotzis_label=0x7f09000d;
+        public static final int gen2_nemo_date=0x7f090014;
+        public static final int gen2_nemo_label=0x7f090013;
+        public static final int gen2_wallcoolerburritos_date=0x7f090010;
+        public static final int gen2_wallcoolerburritos_label=0x7f09000f;
+        public static final int gen2_wallcoolerhotpockets_date=0x7f090012;
+        public static final int gen2_wallcoolerhotpockets_label=0x7f090011;
+        public static final int gen2_wallcoolerpizzas_date=0x7f09000a;
+        public static final int gen2_wallcoolerpizzas_label=0x7f090009;
+        public static final int gen2_welcome=0x7f090001;
+        public static final int gregorian=0x7f090003;
+        public static final int gregorian_TV=0x7f090004;
+        public static final int julian=0x7f090005;
+        public static final int julian_TV=0x7f090006;
+        public static final int menu_about=0x7f09001b;
+        public static final int menu_settings=0x7f09001a;
+        public static final int menu_storeList=0x7f09001c;
+        public static final int storeList=0x7f090019;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_settings=0x7f030001;
+        public static final int activity_about=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_settings=0x7f030002;
+        public static final int activity_storelist=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
+        /**   The following strings are used in About 
+         */
+        public static final int about_greeting=0x7f050010;
         public static final int app_name=0x7f050000;
         /**   The following strings are used in Settings
          */
-        public static final int division_prompt=0x7f050002;
-        public static final int gen2_chilichese=0x7f050007;
-        public static final int gen2_grillfood=0x7f050009;
-        public static final int gen2_hotzis=0x7f05000a;
-        public static final int gen2_nemo=0x7f05000d;
-        public static final int gen2_wallcoolerburritos=0x7f05000b;
-        public static final int gen2_wallcoolerhotpockets=0x7f05000c;
-        public static final int gen2_wallcoolerpizzas=0x7f050008;
-        public static final int gen2_welcome=0x7f050006;
-        public static final int gregorian=0x7f050005;
+        public static final int division_prompt=0x7f050004;
+        public static final int gen2_chilichese=0x7f050009;
+        public static final int gen2_grillfood=0x7f05000b;
+        public static final int gen2_hotzis=0x7f05000c;
+        public static final int gen2_nemo=0x7f05000f;
+        public static final int gen2_wallcoolerburritos=0x7f05000d;
+        public static final int gen2_wallcoolerhotpockets=0x7f05000e;
+        public static final int gen2_wallcoolerpizzas=0x7f05000a;
         /**   The following strings are used in MainActivity (Gen2)
          */
-        public static final int julian=0x7f050004;
+        public static final int gen2_welcome=0x7f050006;
+        public static final int gregorian=0x7f050008;
+        public static final int julian=0x7f050007;
+        public static final int menu_about=0x7f050002;
         public static final int menu_settings=0x7f050001;
-        public static final int search_prompt=0x7f050003;
+        public static final int menu_storeList=0x7f050003;
+        public static final int search_prompt=0x7f050005;
+        /**   The following strings are used in Division Store List
+         */
+        public static final int storeList=0x7f050011;
     }
     public static final class style {
         /** 

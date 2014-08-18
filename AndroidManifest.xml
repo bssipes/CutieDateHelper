@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bsipes.cutiedatehelper"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.4" >
 
     <uses-sdk
@@ -24,5 +24,11 @@
         <activity
             android:name="com.bsipes.cutiedatehelper.Settings"
             android:label="Settings" />
+        <activity
+            android:name="com.bsipes.cutiedatehelper.About"
+            android:label="About" />
+        <activity
+            android:name="com.bsipes.cutiedatehelper.StoreList"
+            android:label="Division Store List" />
     </application>
 </manifest>
