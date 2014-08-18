@@ -3,6 +3,7 @@ package com.bsipes.cutiedatehelper;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -12,6 +13,8 @@ public class About extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_about);
+		TextView about = (TextView)findViewById(R.id.about_greeting);
+		Linkify.addLinks(about, Linkify.EMAIL_ADDRESSES);
 		main();
 	}// end onCreate
 

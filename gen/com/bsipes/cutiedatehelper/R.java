@@ -93,7 +93,7 @@ public final class R {
         public static final int search_prompt=0x7f050005;
         /**   The following strings are used in Division Store List
          */
-        public static final int storeList=0x7f050011;
+        public static final int storeList_KC=0x7f050011;
     }
     public static final class style {
         /** 

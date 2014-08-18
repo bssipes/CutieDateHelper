@@ -7,12 +7,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
-        
+
+<!--         <Spinner -->
+<!--             android:id="@+id/StoreList_S" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:entries="@array/default_divisions_array" -->
+<!--             android:prompt="@string/division_prompt" /> -->
+
         <TextView
-        	android:id="@+id/storeList"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:text="@string/storeList" />   
+            android:id="@+id/storeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/storeList_KC" />
     </LinearLayout>
 
 </ScrollView>
