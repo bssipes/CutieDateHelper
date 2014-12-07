@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <TableLayout
+        android:id="@+id/tl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Welcome Message -->
+
+        <TableRow
+            android:id="@+id/gen2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_welcome" />
+
+            <TextView
+                android:id="@+id/DisplayStoreNumber_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="divisionName" />
+        </TableRow>
+
+        <!-- Today's dates -->
+
+        <TableRow
+            android:id="@+id/greg_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gregorian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gregorian" />
+
+            <TextView
+                android:id="@+id/gregorian_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/jul_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/julian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/julian" />
+
+            <TextView
+                android:id="@+id/julian_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <!-- Chili and Cheese -->
+
+        <TableRow
+            android:id="@+id/gen2_cc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+            <TextView
+                android:id="@+id/gen2_chilicheese_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_chilichese" />
+            <TextView
+                android:id="@+id/gen2_chilicheese_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chilicheseDate" />
+        </TableRow>
+        
+        <!-- Whipped Topper and Flavor Center Creamers -->
+
+        <TableRow
+            android:id="@+id/gen2_wtc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+            <TextView
+                android:id="@+id/gen2_whippedTopper_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_whippedtopper" />
+            <TextView
+                android:id="@+id/gen2_whippedTopper_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="whippedtopperDate" />
+        </TableRow>
+
+        <!-- WallCooler Pizzas -->
+
+        <TableRow
+            android:id="@+id/gen2_wcp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_wallcoolerpizzas_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_wallcoolerpizzas" />
+
+            <TextView
+                android:id="@+id/gen2_wallcoolerpizzas_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wallcoolerpizzasDate" />
+        </TableRow>
+
+        <!-- Backstock Grillfood -->
+
+        <TableRow
+            android:id="@+id/gen2_bgf"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_grillfood_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_grillfood" />
+
+            <TextView
+                android:id="@+id/gen2_grillfood_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="grillfoodDate" />
+        </TableRow>
+
+        <!-- Hotzis -->
+
+        <TableRow
+            android:id="@+id/gen2_hotzis"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_hotzis_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_hotzis" />
+
+            <TextView
+                android:id="@+id/gen2_hotzis_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hotzisDate" />
+        </TableRow>
+
+        <!-- WallCooler Frozen Burritos -->
+
+        <TableRow
+            android:id="@+id/gen2_wcb"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_wallcoolerburritos_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_wallcoolerburritos" />
+
+            <TextView
+                android:id="@+id/gen2_wallcoolerburritos_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wallcoolerburritosDate" />
+        </TableRow>
+
+        <!-- WallCooler Hot Pockets -->
+
+        <TableRow
+            android:id="@+id/gen2_wchp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_wallcoolerhotpockets_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_wallcoolerhotpockets" />
+
+            <TextView
+                android:id="@+id/gen2_wallcoolerhotpockets_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wallcoolerhotpocketsDate" />
+        </TableRow>
+        <!-- Nemo Cakes -->
+
+        <TableRow
+            android:id="@+id/gen2_nemo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_nemo_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_nemo" />
+
+            <TextView
+                android:id="@+id/gen2_nemo_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nemoDate" />
+        </TableRow>
+
+        <!-- Gen3 Products -->
+
+        <TableRow
+            android:id="@+id/gen3_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_softServe_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/softServe" />
+
+            <TextView
+                android:id="@+id/gen3_softServe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="softServe date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_nfy"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_nonfatYogurt_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nonfatYogurt" />
+
+            <TextView
+                android:id="@+id/gen3_nonfatYogurt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nonfatYogurt date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_sbm"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_smoothieBaseMix_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/smoothieBaseMix" />
+
+            <TextView
+                android:id="@+id/gen3_smoothieBaseMix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="smoothieBaseMix date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_mds"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_moninDavinciSyrup_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moninDavinciSyrup" />
+
+            <TextView
+                android:id="@+id/gen3_moninDavinciSyrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="moninDavinciSyrup date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_gds"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_ghiradelliDavinciSauce_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ghiradelliDavinciSauce" />
+
+            <TextView
+                android:id="@+id/gen3_ghiradelliDavinciSauce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ghiradelliDavinciSauce date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_candyPieces_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/candyPieces" />
+
+            <TextView
+                android:id="@+id/gen3_candyPieces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="candyPieces date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_eb"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_espressoBiB_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/espressoBiB" />
+
+            <TextView
+                android:id="@+id/gen3_espressoBiB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="espressoBiB date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_sj"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_smoothieJuice_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/smoothieJuice" />
+
+            <TextView
+                android:id="@+id/gen3_smoothieJuice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="smoothieJuice date" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gen3_sai"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_smoothieAddins_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/smoothieAddins" />
+
+            <TextView
+                android:id="@+id/gen3_smoothieAddins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="smoothieAddins date" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/gen3_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_frozenLemonades_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/frozenLemonades" />
+			<TextView
+            android:id="@+id/gen3_frozenLemonades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="frozenLemonades date" />
+			</TableRow>
+        <TableRow
+            android:id="@+id/gen3_pbs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_phaseButterSub_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/phaseButterSub" />
+			<TextView
+            android:id="@+id/gen3_phaseButterSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="phaseButterSub date" />
+			</TableRow>
+        <TableRow
+            android:id="@+id/gen3_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pretzels_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pretzels" />
+			<TextView
+            android:id="@+id/gen3_pretzels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pretzels date" />
+			</TableRow>
+        <TableRow
+            android:id="@+id/gen3_pcm"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pretzelCheeseMarinara_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pretzelCheeseMarinara" />
+			<TextView
+            android:id="@+id/gen3_pretzelCheeseMarinara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pretzelCheeseMarinara date" />
+			</TableRow>
+        <TableRow
+            android:id="@+id/gen3_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pretzelToppings_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pretzelToppings" />
+			<TextView
+            android:id="@+id/gen3_pretzelToppings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pretzelToppings date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_pc7"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pizzaCrust7_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pizzaCrust7" />
+			<TextView
+            android:id="@+id/gen3_pizzaCrust7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pizzaCrust7 date" />
+			</TableRow>	
+        <TableRow
+            android:id="@+id/gen3_pc16"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pizzaCrust16_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pizzaCrust16" />
+			<TextView
+            android:id="@+id/gen3_pizzaCrust16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pizzaCrust16 date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_pc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pizzaCheese_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pizzaCheese" />
+			<TextView
+            android:id="@+id/gen3_pizzaCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pizzaCheese date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_pepp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pepperoni_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pepperoni" />
+			<TextView
+            android:id="@+id/gen3_pepperoni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pepperoni date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_saus"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_sausage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/sausage" />
+			<TextView
+            android:id="@+id/gen3_sausage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="sausage date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_psauce"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pizzaSauce_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pizzaSauce" />
+			<TextView
+            android:id="@+id/gen3_pizzaSauce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pizzaSauce date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_pveg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_pizzaVegetables_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/pizzaVegetables" />
+			<TextView
+            android:id="@+id/gen3_pizzaVegetables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="pizzaVegetables date" />			
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_k"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_kolaches_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/kolaches" />
+			<TextView
+            android:id="@+id/gen3_kolaches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="kolaches date" />
+			</TableRow>
+        <TableRow
+            android:id="@+id/gen3_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_toastedSandwiches_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/toastedSandwiches" />
+			<TextView
+            android:id="@+id/gen3_toastedSandwiches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="toastedSandwiches date" />			
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_flatbreads_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/flatbreads" />
+			<TextView
+            android:id="@+id/gen3_flatbreads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="flatbreads date" />
+			</TableRow>
+        <TableRow
+            android:id="@+id/gen3_rs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_ranchSqueeze_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/ranchSqueeze" />
+			<TextView
+            android:id="@+id/gen3_ranchSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="ranchSqueeze date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_ranchGallon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/ranchGallon" />
+			<TextView
+            android:id="@+id/gen3_ranchGallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="ranchGallon date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_cms"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_chipMayoSqueeze_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/chipMayoSqueeze" />
+			<TextView
+            android:id="@+id/gen3_chipMayoSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="chipMayoSqueeze date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_bbqs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_bbqSqueeze_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/bbqSqueeze" />
+			<TextView
+            android:id="@+id/gen3_bbqSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="bbqSqueeze date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_bbqg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_bbqGallon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/bbqGallon" />
+			<TextView
+            android:id="@+id/gen3_bbqGallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="bbqGallon date" />
+		</TableRow>
+	<TableRow
+            android:id="@+id/gen3_ep"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_eggPatty_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/eggPatty" />
+			<TextView
+            android:id="@+id/gen3_eggPatty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="eggPatty date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_ch"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_cherries_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/cherries" />
+			<TextView
+            android:id="@+id/gen3_cherries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="cherries date" />	
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_sg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_sausageGravy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/sausageGravy" />
+			<TextView
+            android:id="@+id/gen3_sausageGravy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="sausageGravy date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_se"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_scrambledEggs_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/scrambledEggs" />
+			<TextView
+            android:id="@+id/gen3_scrambledEggs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="scrambledEggs date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_bs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_baconStrips_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/baconStrips" />
+			<TextView
+            android:id="@+id/gen3_baconStrips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="baconStrips date" />	
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_bc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_baconCrumbles_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/baconCrumbles" />
+			<TextView
+            android:id="@+id/gen3_baconCrumbles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="baconCrumbles date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_jc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_joyCones_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/joyCones" />
+			<TextView
+            android:id="@+id/gen3_joyCones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="joyCones date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_frappe"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_frappeBase_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/frappeBase" />
+			<TextView
+            android:id="@+id/gen3_frappeBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="frappeBase date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_igam"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_intenseGreenAppleMix_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intenseGreenAppleMix" />
+			<TextView
+            android:id="@+id/gen3_intenseGreenAppleMix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="intenseGreenAppleMix date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_chickenTenders_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/chickenTenders" />
+			<TextView
+            android:id="@+id/gen3_chickenTenders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="chickenTenders date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_hms"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_honeyMustardSqueeze_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/honeyMustardSqueeze" />
+			<TextView
+            android:id="@+id/gen3_honeyMustardSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="honeyMustardSqueeze date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_hmg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_honeyMustardGallon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/honeyMustardGallon" />
+			<TextView
+            android:id="@+id/gen3_honeyMustardGallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="honeyMustardGallon date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_hs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_hamSlice_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/hamSlice" />
+			<TextView
+            android:id="@+id/gen3_hamSlice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="hamSlice date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_sausagePatty_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/sausagePatty" />
+			<TextView
+            android:id="@+id/gen3_sausagePatty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="sausagePatty date" />
+	</TableRow>
+    </TableLayout>
+</ScrollView>
