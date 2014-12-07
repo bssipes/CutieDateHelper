@@ -43,6 +43,7 @@
     <string name="gen2_wallcoolerburritos">WallCooler Burritos</string>
     <string name="gen2_wallcoolerhotpockets">WallCooler Hot Pockets</string>
     <string name="gen2_nemo">Nemo Cakes</string>
+    <string name="gen3_header"><b>     Gen2.5 and Gen3</b></string>
     
 <!--  The following strings are used in About -->
     <string name="about_greeting">Hello and welcome to the CutieDateHelper.

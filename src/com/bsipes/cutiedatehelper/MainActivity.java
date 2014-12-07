@@ -90,9 +90,99 @@ public class MainActivity extends Activity
 		
 		gen2_nemo_date.setText("Nemo Cakes:\t\t\t\t\t".concat(String.format("%03d", julian)+
 				String.format("%03d", (julian+divisions.get(divisionName).getNemo())%totalDays)));
+		return;
 	}
 	
 	private void setgen3Dates(int julian) {
+		//declare all the textviews
+		TextView gen3_softServe = (TextView) findViewById(R.id.gen3_softServe);
+		TextView gen3_nonfatYogurt = (TextView) findViewById(R.id.gen3_nonfatYogurt);
+		TextView gen3_smoothieBaseMix = (TextView) findViewById(R.id.gen3_smoothieBaseMix);
+		TextView gen3_moninDavinciSyrup = (TextView) findViewById(R.id.gen3_moninDavinciSyrup);
+		TextView gen3_ghiradelliDavinciSauce = (TextView) findViewById(R.id.gen3_ghiradelliDavinciSauce);
+		TextView gen3_candyPieces = (TextView) findViewById(R.id.gen3_candyPieces);
+		TextView gen3_espressoBiB = (TextView) findViewById(R.id.gen3_espressoBiB);
+		TextView gen3_smoothieJuice = (TextView) findViewById(R.id.gen3_smoothieJuice);
+		TextView gen3_smoothieAddins = (TextView) findViewById(R.id.gen3_smoothieAddins);
+		TextView gen3_frozenLemonades = (TextView) findViewById(R.id.gen3_frozenLemonades);
+		TextView gen3_phaseButterSub = (TextView) findViewById(R.id.gen3_phaseButterSub);
+		TextView gen3_pretzels = (TextView) findViewById(R.id.gen3_pretzels);
+		TextView gen3_pretzelCheeseMarinara = (TextView) findViewById(R.id.gen3_pretzelCheeseMarinara);
+		TextView gen3_pretzelToppings = (TextView) findViewById(R.id.gen3_pretzelToppings);
+		TextView gen3_pizzaCrust7 = (TextView) findViewById(R.id.gen3_pizzaCrust7);
+		TextView gen3_pizzaCrust16 = (TextView) findViewById(R.id.gen3_pizzaCrust16);
+		TextView gen3_pizzaCheese = (TextView) findViewById(R.id.gen3_pizzaCheese);
+		TextView gen3_pepperoni = (TextView) findViewById(R.id.gen3_pepperoni);
+		TextView gen3_sausage = (TextView) findViewById(R.id.gen3_sausage);
+		TextView gen3_pizzaSauce = (TextView) findViewById(R.id.gen3_pizzaSauce);
+		TextView gen3_pizzaVegetables = (TextView) findViewById(R.id.gen3_pizzaVegetables);
+		TextView gen3_kolaches = (TextView) findViewById(R.id.gen3_kolaches);
+		TextView gen3_toastedSandwiches = (TextView) findViewById(R.id.gen3_toastedSandwiches);
+		TextView gen3_flatbreads = (TextView) findViewById(R.id.gen3_flatbreads);
+		TextView gen3_ranchSqueeze = (TextView) findViewById(R.id.gen3_ranchSqueeze);
+		TextView gen3_ranchGallon = (TextView) findViewById(R.id.gen3_ranchGallon);
+		TextView gen3_chipMayoSqueeze = (TextView) findViewById(R.id.gen3_chipMayoSqueeze);
+		TextView gen3_bbqSqueeze = (TextView) findViewById(R.id.gen3_bbqSqueeze);
+		TextView gen3_bbqGallon = (TextView) findViewById(R.id.gen3_bbqGallon);
+		TextView gen3_eggPatty = (TextView) findViewById(R.id.gen3_eggPatty);
+		TextView gen3_cherries = (TextView) findViewById(R.id.gen3_cherries);
+		TextView gen3_sausageGravy = (TextView) findViewById(R.id.gen3_sausageGravy);
+		TextView gen3_scrambledEggs = (TextView) findViewById(R.id.gen3_scrambledEggs);
+		TextView gen3_baconStrips = (TextView) findViewById(R.id.gen3_baconStrips);
+		TextView gen3_baconCrumbles = (TextView) findViewById(R.id.gen3_baconCrumbles);
+		TextView gen3_joyCones = (TextView) findViewById(R.id.gen3_joyCones);
+		TextView gen3_frappeBase = (TextView) findViewById(R.id.gen3_frappeBase);
+		TextView gen3_intenseGreenAppleMix = (TextView) findViewById(R.id.gen3_intenseGreenAppleMix);
+		TextView gen3_chickenTenders = (TextView) findViewById(R.id.gen3_chickenTenders);
+		TextView gen3_honeyMustardSqueeze = (TextView) findViewById(R.id.gen3_honeyMustardSqueeze);
+		TextView gen3_honeyMustardGallon = (TextView) findViewById(R.id.gen3_honeyMustardGallon);
+		TextView gen3_hamSlice = (TextView) findViewById(R.id.gen3_hamSlice);
+		TextView gen3_sausagePatty = (TextView) findViewById(R.id.gen3_sausagePatty);
+
+		gen3_softServe.setText("Soft Serve:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_nonfatYogurt.setText("NonFat Yogurt:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_smoothieBaseMix.setText("Smoothie Base Mix:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_moninDavinciSyrup.setText("Monin/Davinci Syrup:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_ghiradelliDavinciSauce.setText("Ghiradelli/Davinci Sauce:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_candyPieces.setText("Candy Pieces:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_espressoBiB.setText("Espresso BiB:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_smoothieJuice.setText("Smoothie Juice:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_smoothieAddins.setText("Smoothie Add-ins:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_frozenLemonades.setText("Frozen Lemonades:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_phaseButterSub.setText("Phase Butter Sub:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pretzels.setText("Pretzels".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pretzelCheeseMarinara.setText("Pretzel Cheese & Marinara:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pretzelToppings.setText("Pretzel Toppings & Icing Dip:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pizzaCrust7.setText("Pizza Crust 7\":".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pizzaCrust16.setText("Pizza Crust 16\":".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pizzaCheese.setText("Pizza Cheese:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pepperoni.setText("Pepperoni:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_sausage.setText("Sausage:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pizzaSauce.setText("Pizza Sauce:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_pizzaVegetables.setText("Pizza Vegetables:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_kolaches.setText("Kolaches:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_toastedSandwiches.setText("Toasted Sandwiches:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_flatbreads.setText("Flatbreads:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_ranchSqueeze.setText("Ranch Squeeze Bottle:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_ranchGallon.setText("Ranch Gallon:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_chipMayoSqueeze.setText("Chipotle Mayo Squeeze Bottle:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_bbqSqueeze.setText("BBQ Squeeze Bottle:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_bbqGallon.setText("BBQ Gallon:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_eggPatty.setText("Egg Patty:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_cherries.setText("Cherries:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_sausageGravy.setText("Sausage Gravy:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_scrambledEggs.setText("Scrambled Eggs:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_baconStrips.setText("Bacon Strips:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_baconCrumbles.setText("Bacon Crumbles:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_joyCones.setText("Joy Cones:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_frappeBase.setText("Frappe Base:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_intenseGreenAppleMix.setText("Intense Green Apple Mix:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_chickenTenders.setText("Chicken Tenders:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_honeyMustardSqueeze.setText("Honey Mustard Squeeze:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_honeyMustardGallon.setText("Honey Mustard Gallon:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_hamSlice.setText("Ham Slices:".concat(String.format("%03d",julian+0%totalDays)));
+		gen3_sausagePatty.setText("Sausage Patty:".concat(String.format("%03d",julian+0%totalDays)));
+
 		return;
 	}
 	
@@ -109,7 +199,7 @@ public class MainActivity extends Activity
 			divisionName = "KC";
 		}
 		displayStoreNumber_TV = (TextView) findViewById(R.id.DisplayStoreNumber_TV);
-		displayStoreNumber_TV.setText("Displaying information for " + divisionName);
+		displayStoreNumber_TV.setText("Code Dates For: " + divisionName + " Division");
 		main();
 	}// end onCreate
 	

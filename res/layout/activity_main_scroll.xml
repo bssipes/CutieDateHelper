@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-<!-- Welcome Message -->
+        <!-- Welcome Message -->
+
         <TextView
             android:id="@+id/DisplayStoreNumber_TV"
             android:layout_width="wrap_content"
@@ -16,7 +17,8 @@
             android:paddingTop="5dp"
             android:text="divisionName" />
 
-<!-- Today's dates -->
+        <!-- Today's dates -->
+
         <TextView
             android:id="@+id/gregorian_TV"
             android:layout_width="wrap_content"
@@ -32,13 +34,14 @@
             android:text="julianDate" />
 
 <!-- Gen2 Product Dates -->
+
         <TextView
             android:id="@+id/gen2_chilicheese_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="chilicheseDate" />
-        
+
         <TextView
             android:id="@+id/gen2_whippedTopper_date"
             android:layout_width="wrap_content"
@@ -87,13 +90,316 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="nemoDate" />
-<!-- Can I bold this somehow? -->        
+
+<!-- Gen3 Products -->
+
         <TextView
             android:id="@+id/gen3_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
-            android:text="gen3_header" />
+            android:text="@string/gen3_header" />
+
+        <TextView
+            android:id="@+id/gen3_softServe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="softServe date" />
+
+        <TextView
+            android:id="@+id/gen3_nonfatYogurt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="nonfatYogurt date" />
+
+        <TextView
+            android:id="@+id/gen3_smoothieBaseMix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="smoothieBaseMix date" />
+
+        <TextView
+            android:id="@+id/gen3_moninDavinciSyrup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="moninDavinciSyrup date" />
+
+        <TextView
+            android:id="@+id/gen3_ghiradelliDavinciSauce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="ghiradelliDavinciSauce date" />
+
+        <TextView
+            android:id="@+id/gen3_candyPieces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="candyPieces date" />
+
+        <TextView
+            android:id="@+id/gen3_espressoBiB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="espressoBiB date" />
+
+        <TextView
+            android:id="@+id/gen3_smoothieJuice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="smoothieJuice date" />
+
+        <TextView
+            android:id="@+id/gen3_smoothieAddins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="smoothieAddins date" />
+
+        <TextView
+            android:id="@+id/gen3_frozenLemonades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="frozenLemonades date" />
+
+        <TextView
+            android:id="@+id/gen3_phaseButterSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="phaseButterSub date" />
+
+        <TextView
+            android:id="@+id/gen3_pretzels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pretzels date" />
+
+        <TextView
+            android:id="@+id/gen3_pretzelCheeseMarinara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pretzelCheeseMarinara date" />
+
+        <TextView
+            android:id="@+id/gen3_pretzelToppings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pretzelToppings date" />
+
+        <TextView
+            android:id="@+id/gen3_pizzaCrust7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pizzaCrust7 date" />
+
+        <TextView
+            android:id="@+id/gen3_pizzaCrust16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pizzaCrust16 date" />
+
+        <TextView
+            android:id="@+id/gen3_pizzaCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pizzaCheese date" />
+
+        <TextView
+            android:id="@+id/gen3_pepperoni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pepperoni date" />
+
+        <TextView
+            android:id="@+id/gen3_sausage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="sausage date" />
+
+        <TextView
+            android:id="@+id/gen3_pizzaSauce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pizzaSauce date" />
+
+        <TextView
+            android:id="@+id/gen3_pizzaVegetables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="pizzaVegetables date" />
+
+        <TextView
+            android:id="@+id/gen3_kolaches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="kolaches date" />
+
+        <TextView
+            android:id="@+id/gen3_toastedSandwiches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="toastedSandwiches date" />
+
+        <TextView
+            android:id="@+id/gen3_flatbreads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="flatbreads date" />
+
+        <TextView
+            android:id="@+id/gen3_ranchSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="ranchSqueeze date" />
+
+        <TextView
+            android:id="@+id/gen3_ranchGallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="ranchGallon date" />
+
+        <TextView
+            android:id="@+id/gen3_chipMayoSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="chipMayoSqueeze date" />
+
+        <TextView
+            android:id="@+id/gen3_bbqSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="bbqSqueeze date" />
+
+        <TextView
+            android:id="@+id/gen3_bbqGallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="bbqGallon date" />
+
+        <TextView
+            android:id="@+id/gen3_eggPatty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="eggPatty date" />
+
+        <TextView
+            android:id="@+id/gen3_cherries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="cherries date" />
+
+        <TextView
+            android:id="@+id/gen3_sausageGravy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="sausageGravy date" />
+
+        <TextView
+            android:id="@+id/gen3_scrambledEggs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="scrambledEggs date" />
+
+        <TextView
+            android:id="@+id/gen3_baconStrips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="baconStrips date" />
+
+        <TextView
+            android:id="@+id/gen3_baconCrumbles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="baconCrumbles date" />
+
+        <TextView
+            android:id="@+id/gen3_joyCones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="joyCones date" />
+
+        <TextView
+            android:id="@+id/gen3_frappeBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="frappeBase date" />
+
+        <TextView
+            android:id="@+id/gen3_intenseGreenAppleMix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="intenseGreenAppleMix date" />
+
+        <TextView
+            android:id="@+id/gen3_chickenTenders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="chickenTenders date" />
+
+        <TextView
+            android:id="@+id/gen3_honeyMustardSqueeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="honeyMustardSqueeze date" />
+
+        <TextView
+            android:id="@+id/gen3_honeyMustardGallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="honeyMustardGallon date" />
+
+        <TextView
+            android:id="@+id/gen3_hamSlice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="hamSlice date" />
+
+        <TextView
+            android:id="@+id/gen3_sausagePatty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="sausagePatty date" />
     </LinearLayout>
 
 </ScrollView>
