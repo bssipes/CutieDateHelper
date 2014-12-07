@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 public class StoreList extends Activity {
@@ -17,8 +15,6 @@ public class StoreList extends Activity {
 		setContentView(R.layout.activity_storelist);
 		TextView storeList = (TextView)findViewById(R.id.storeList);
 		Linkify.addLinks(storeList, Linkify.PHONE_NUMBERS);
-//		Spinner divisionSpinner = (Spinner)findViewById(R.id.StoreList_S);
-//		divisionSpinner.setSelection(3); //3 for KC
 		main();
 	}// end onCreate
 

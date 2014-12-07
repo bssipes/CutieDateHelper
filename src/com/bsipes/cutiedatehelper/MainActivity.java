@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class MainActivity extends Activity 
 {
 	private String divisionName; //set in onCreate
-	private boolean gen3Mode; // set in onCreate
 	public TextView displayStoreNumber_TV;
 	public HashMap<String, Division> divisions = new HashMap<String, Division>();
 	public int totalDays = 365;
@@ -42,21 +41,24 @@ public class MainActivity extends Activity
 		GregorianCalendar gc = (GregorianCalendar) GregorianCalendar.getInstance();
 
 		TextView gregorian_TV = (TextView) findViewById(R.id.gregorian_TV);
-		gregorian_TV.setText((gc.get(Calendar.MONTH) + 1) + "/" + gc.get(Calendar.DAY_OF_MONTH) + "/" + gc.get(Calendar.YEAR));
+		gregorian_TV.setText("Today's Calendar Date: " + (gc.get(Calendar.MONTH) + 1) + "/" + gc.get(Calendar.DAY_OF_MONTH) + "/" + gc.get(Calendar.YEAR));
 
 		TextView julian_TV = (TextView) findViewById(R.id.julian_TV);
 		int julian = gc.get(Calendar.DAY_OF_YEAR);
-		julian_TV.setText(String.valueOf(julian));
+		julian_TV.setText("Today's Julian Date: \t\t" + String.valueOf(julian));
 
 		if (gc.isLeapYear(Calendar.YEAR)) 
 		{
 			totalDays += 1;
 		}
 		setgen2Dates(julian);
-	}
+		setgen3Dates(julian);
+	}//end main
+	
 	private void setgen2Dates(int julian) {
 		//declare all the textviews
 		TextView gen2_chilicheese_date = (TextView) findViewById(R.id.gen2_chilicheese_date);
+		TextView gen2_whippedTopper_date = (TextView) findViewById(R.id.gen2_whippedTopper_date);
 		TextView gen2_wallcoolerpizzas_date = (TextView) findViewById(R.id.gen2_wallcoolerpizzas_date);
 		TextView gen2_grillfood_date = (TextView) findViewById(R.id.gen2_grillfood_date);
 		TextView gen2_hotzis_date = (TextView) findViewById(R.id.gen2_hotzis_date);
@@ -64,41 +66,50 @@ public class MainActivity extends Activity
 		TextView gen2_wallcoolerhotpockets_date = (TextView) findViewById(R.id.gen2_wallcoolerhotpockets_date);
 		TextView gen2_nemo_date = (TextView) findViewById(R.id.gen2_nemo_date);
 		
-//TODO: test how the code handles julian+X = totalDays (likely display 0, where we want 365/366 instead)
-		gen2_chilicheese_date.setText(String.format("%03d", 
-				(julian+divisions.get(divisionName).getCC())%totalDays));
-		gen2_wallcoolerpizzas_date.setText(String.format("%03d", (julian+1)%totalDays)+
-				String.format("%03d", (julian+divisions.get(divisionName).getWCP())%totalDays));
-		gen2_grillfood_date.setText(String.format("%03d", julian)+", "+
+		gen2_chilicheese_date.setText("Chili and Cheese:\t\t\t".concat(String.format("%03d", 
+				(julian+divisions.get(divisionName).getCC())%totalDays)));
+		
+		gen2_whippedTopper_date.setText("Creamer BiB:\t\t\t\t\t\t".concat(String.format("%03d",julian+14%totalDays)));
+		
+		gen2_wallcoolerpizzas_date.setText("WallCooler Pizzas:\t\t\t".concat(String.format("%03d", (julian+1)%totalDays)+
+				String.format("%03d", (julian+divisions.get(divisionName).getWCP())%totalDays)));
+		
+		gen2_grillfood_date.setText("Backstock GrillFood:\t\t".concat(String.format("%03d", julian)+", "+
 				String.format("%03d", (julian+2)%totalDays)+", "+
-				String.format("%03d", (julian+divisions.get(divisionName).getGF())%totalDays));
-		gen2_hotzis_date.setText(String.format("%03d", julian)+", "+
+				String.format("%03d", (julian+divisions.get(divisionName).getGF())%totalDays)));
+		
+		gen2_hotzis_date.setText("Hotzis:\t\t\t\t\t\t\t\t".concat(String.format("%03d", julian)+", "+
 				String.format("%03d", (julian+2)%totalDays)+", "+
-				String.format("%03d", (julian+divisions.get(divisionName).getHotzi())%totalDays));
-		gen2_wallcoolerburritos_date.setText(String.format("%03d", (julian+1)%totalDays)+
-				String.format("%03d", (julian+divisions.get(divisionName).getWCB())%totalDays));
-		gen2_wallcoolerhotpockets_date.setText(String.format("%03d", (julian+1)%totalDays)+
-				String.format("%03d", (julian+divisions.get(divisionName).getWCHP())%totalDays));
-		gen2_nemo_date.setText(String.format("%03d", julian)+
-				String.format("%03d", (julian+divisions.get(divisionName).getNemo())%totalDays));
+				String.format("%03d", (julian+divisions.get(divisionName).getHotzi())%totalDays)));
+		
+		gen2_wallcoolerburritos_date.setText("WallCooler Burritos:\t\t".concat(String.format("%03d", (julian+1)%totalDays)+
+				String.format("%03d", (julian+divisions.get(divisionName).getWCB())%totalDays)));
+		
+		gen2_wallcoolerhotpockets_date.setText("Hot Pockets:\t\t\t\t\t\t".concat(String.format("%03d", (julian+1)%totalDays)+
+				String.format("%03d", (julian+divisions.get(divisionName).getWCHP())%totalDays)));
+		
+		gen2_nemo_date.setText("Nemo Cakes:\t\t\t\t\t".concat(String.format("%03d", julian)+
+				String.format("%03d", (julian+divisions.get(divisionName).getNemo())%totalDays)));
+	}
+	
+	private void setgen3Dates(int julian) {
+		return;
 	}
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main_scroll);
 		Bundle bundle = getIntent().getExtras();
 		if (getIntent().hasExtra("divisionName")) 
 		{
 			divisionName = bundle.getString("divisionName");
-			gen3Mode = bundle.getBoolean("gen3Mode");
 		}
 		else //this will be empty before the user opens the Settings and saves a default
 		{
 			divisionName = "KC";
-			gen3Mode = false;
 		}
 		displayStoreNumber_TV = (TextView) findViewById(R.id.DisplayStoreNumber_TV);
-		displayStoreNumber_TV.setText(divisionName);
+		displayStoreNumber_TV.setText("Displaying information for " + divisionName);
 		main();
 	}// end onCreate
 	

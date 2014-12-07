@@ -5,12 +5,6 @@
     android:orientation="vertical"
     tools:context=".SettingsActivity" >
 
-    <CheckBox
-        android:id="@+id/displayGen3_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Display Gen3 Code Dates?" />
-
     <Spinner
         android:id="@+id/DefaultDivision_S"
         android:layout_width="match_parent"

@@ -15,7 +15,6 @@ import android.widget.Spinner;
 
 public class Settings extends Activity implements OnClickListener {
 	public static final String CDHLS = "CDH_Location_Settings";
-	CheckBox displayGen3_CB;
 	Spinner defaultDivision_S;
 	Spinner searchDivision_S;
 	Button saveAndSubmit_Button;
@@ -24,7 +23,6 @@ public class Settings extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
-		displayGen3_CB = (CheckBox) findViewById(R.id.displayGen3_CB);
 		
 		defaultDivision_S = (Spinner) findViewById(R.id.DefaultDivision_S);
 		searchDivision_S = (Spinner) findViewById(R.id.SearchDivision_S);
@@ -37,29 +35,7 @@ public class Settings extends Activity implements OnClickListener {
 		SharedPreferences CDHSettings = getSharedPreferences(CDHLS,
 				Context.MODE_PRIVATE);
 
-		boolean gen3Mode = CDHSettings.getBoolean("gen3Mode", false);
-		if (gen3Mode) {
-			displayGen3_CB.setChecked(true);
-		} else {
-			displayGen3_CB.setChecked(false);
-		}
 		defaultDivision_S.setSelection(CDHSettings.getInt("defaultDivision", 3)); //3 for KC
-	}
-	
-	private void savePreferences(String key, String value)	{
-		SharedPreferences CDHSettings = getSharedPreferences(CDHLS,
-				Context.MODE_PRIVATE);
-		SharedPreferences.Editor editor = CDHSettings.edit();
-		editor.putString(key, value);
-		editor.commit();
-	}
-	
-	private void savePreferences(String key, boolean value) {
-		SharedPreferences CDHSettings = getSharedPreferences(CDHLS,
-				Context.MODE_PRIVATE);
-		SharedPreferences.Editor editor = CDHSettings.edit();
-		editor.putBoolean(key, value);
-		editor.commit();
 	}
 	
 	private void savePreferences(String key, int value) {
@@ -72,12 +48,10 @@ public class Settings extends Activity implements OnClickListener {
 	
 	@Override
 	public void onClick(View v) {
-		savePreferences("gen3Mode", displayGen3_CB.isChecked());
 		savePreferences("defaultDivision", defaultDivision_S.getSelectedItemPosition());
 		
 		// pass the user data to the main activity
 		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-		intent.putExtra("gen3Mode", displayGen3_CB.isChecked());
 		
 		//if search is at position 0, no search was entered, assume user wants default
 		if (searchDivision_S.getSelectedItemPosition() == 0)
