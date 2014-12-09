@@ -28,17 +28,12 @@ TODO: Research how to make swipe left/right transitions
 1.3) Began work on MainActivity.java Several TODO items listed for future updates.
 Updated README file with Changelog
 
-README Update and Wishlist) Couldn't even get my numbering in the README Changelog correct.. 
-1.3x will consist of:
-a) deciding how to store/retrieve the division by store#
-b) deciding how to store/retrieve the division product dating data
-c) actually use the stored data to display information on the screen
-1.4 will consist of:
-a) including gen3 in the division product dating data
-b) designing gen3 xml
-c) setting up gen3 activity (should mirror the gen2 data retrieval/setting)
-d) setup/test scrolling up/down on gen3 activity
-e) setup/test swiping left/right to move from gen2 to gen3 and back
-1.5 will consist of: 
-a) developing a search for gen3 (eg "pizza" to bring up all ingredients dating info)
-b) ?? TBA
+1.3-1.5) Who knows? I was lazy and didn't document this well.
+
+1.51) Removed the Gen3 checkbox from Settings. Made the MainActivity scrollable.
+
+1.52) Initial addition of Gen3 placeholders
+
+1.53-1.53a) Switched to TableLayout
+
+1.54) Add Gen3 dates based off the sheet. This information MIGHT NOT BE CORRECT and thus will not be published to the Play Store until confirmed
