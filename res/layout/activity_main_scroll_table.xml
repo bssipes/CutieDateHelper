@@ -900,23 +900,7 @@
             android:layout_height="wrap_content"            
             android:text="frappeBase date" />
 	</TableRow>
-	<TableRow
-            android:id="@+id/gen3_igam"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="2.5dp" >
-			<TextView
-            android:id="@+id/gen3_intenseGreenAppleMix_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/intenseGreenAppleMix" />
-			<TextView
-            android:id="@+id/gen3_intenseGreenAppleMix"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="intenseGreenAppleMix date" />
-	</TableRow>
+
 	<TableRow
             android:id="@+id/gen3_ct"
             android:layout_width="wrap_content"

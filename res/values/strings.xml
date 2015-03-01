@@ -5,6 +5,7 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_about">About</string>
     <string name="menu_storeList">Division Store List</string>
+    <string name="menu_j2g">Julian Converter</string>
 
     <!-- The following strings are used in Settings -->
     <string name="division_prompt">Default Division</string>
@@ -37,7 +38,7 @@
     <string name="julian">Today\'s Julian Date Is: </string>
     <string name="gregorian">Today\'s Calendar Date Is: </string>
     <string name="gen2_chilichese">Chili and Cheese</string>
-    <string name="gen2_whippedtopper">Whipped Topper \nand Flavor Center Creamers</string>
+    <string name="gen2_whippedtopper">Whipped Topper\nand Flavor Center Creamers</string>
     <string name="gen2_wallcoolerpizzas">WallCooler Pizzas</string>
     <string name="gen2_grillfood">Backstock GrillFood</string>
     <string name="gen2_hotzis">Hotzis</string>
@@ -56,14 +57,14 @@
     <string name="espressoBiB">Espresso BiB</string>
     <string name="smoothieJuice">Smoothie Juice</string>
     <string name="smoothieAddins">Smoothie Add-ins</string>
-    <string name="frozenLemonades">Frozen Lemonades</string>
+    <string name="frozenLemonades">Frozen Lemonades Shelf\n\nFrozen Lemonades Open</string>
     <string name="phaseButterSub">Phase Butter Sub</string>
     <string name="pretzels">Pretzels</string>
     <string name="pretzelCheeseMarinara">Pretzel Cheese and Marinara</string>
     <string name="pretzelToppings">Pretzel Toppings and Icing Dip</string>
     <string name="pizzaCrust7">Pizza Crust 7</string>
     <string name="pizzaCrust16">Pizza Crust 16</string>
-    <string name="pizzaCheese">Pizza Cheese</string>
+    <string name="pizzaCheese">Pizza Cheese(Mozz, Cheddar)</string>
     <string name="pepperoni">Pepperoni</string>
     <string name="sausage">Sausage</string>
     <string name="pizzaSauce">Pizza Sauce</string>
@@ -76,9 +77,9 @@
     <string name="chipMayoSqueeze">Chipotle Mayo Squeeze Bottle</string>
     <string name="bbqSqueeze">BBQ Squeeze Bottle</string>
     <string name="bbqGallon">BBQ Gallon</string>
-    <string name="eggPatty">Egg Patty</string>
+    <string name="eggPatty">Egg Patty Pull-Thaw\n\tExpiration</string>
     <string name="cherries">Cherries</string>
-    <string name="sausageGravy">Sausage Gravy</string>
+    <string name="sausageGravy">Sausage Gravy Thawed\n\n\nSausage Gravy Frozen</string>
     <string name="scrambledEggs">Scrambled Eggs</string>
     <string name="baconStrips">Bacon Strips</string>
     <string name="baconCrumbles">Bacon Crumbles</string>
@@ -95,7 +96,9 @@
     <string name="about_greeting">Hello and welcome to the CutieDateHelper.
         \nThis application was written by Benjamin Sipes, currently a PTC at #193.
         \nCDH is intended to help QT employees learn to properly code-date products.
-        \n\n\nSpecial thanks goes out to:\n
+        \n\nFor all Gen3 products that say "OR XYZ DATE" refer to the fact that products cannot gain shelf life magically. If you put Ranch into a squeeze bottle on 2/22/2015 and the Ranch Gallon expires 2/24/2015, the squeeze bottle will also expire 2/24/2015.
+        \nTransferring product in this fashion DOES NOT extend the life.
+        \n\nSpecial thanks goes out to:\n
          Aejay Goehring \n
          Ashley Stapleton \n
          Kylee Olesky \n

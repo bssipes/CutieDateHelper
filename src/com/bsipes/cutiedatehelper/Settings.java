@@ -98,6 +98,10 @@ public class Settings extends Activity implements OnClickListener {
         	Intent intent3 = new Intent(this, StoreList.class);
         	startActivity(intent3);
         	break;
+        case R.id.menu_julianConverter:
+        	Intent intent4 = new Intent(this, J2G.class);
+        	startActivity(intent4);
+        	break;
         }
         return super.onOptionsItemSelected(item);
 	}

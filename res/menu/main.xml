@@ -15,5 +15,10 @@
         android:orderInCategory="3"
         android:showAsAction="ifRoom"
         android:title="@string/menu_storeList"/>
+    <item
+        android:id="@+id/menu_julianConverter"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_j2g"/>
 
 </menu>

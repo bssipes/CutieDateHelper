@@ -10,8 +10,11 @@ public class Division
 	private int gen2_wallcoolerburritos_offset;
 	private int gen2_wallcoolerhotpockets_offset;
 	private int gen2_nemo_offset;
+	private int gen3_pepsaus_offset;
+	private int gen3_eggpatty_offset;
+	private int gen3_bacon_offset;
 	
-	public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo)
+	public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo, int inPepSaus, int inEP, int inBacon)
 	{
 		divisionName = inName;
 		gen2_chilicheese_offset = inCC;
@@ -21,6 +24,9 @@ public class Division
 		gen2_wallcoolerburritos_offset = inWCB;
 		gen2_wallcoolerhotpockets_offset = inWCHP;
 		gen2_nemo_offset = inNemo;
+		gen3_pepsaus_offset = inPepSaus;
+		gen3_eggpatty_offset = inEP;
+		gen3_bacon_offset = inBacon;
 	}
 	
 	public String getD()	{return divisionName;}
@@ -31,4 +37,7 @@ public class Division
 	public int getWCB()		{return gen2_wallcoolerburritos_offset;}
 	public int getWCHP()	{return gen2_wallcoolerhotpockets_offset;}
 	public int getNemo()	{return gen2_nemo_offset;}
+	public int getPS() 		{return gen3_pepsaus_offset;}
+	public int getEP()		{return gen3_eggpatty_offset;}
+	public int getB()		{return gen3_bacon_offset;}
 }
