@@ -102,6 +102,10 @@ public class Settings extends Activity implements OnClickListener {
         	Intent intent4 = new Intent(this, J2G.class);
         	startActivity(intent4);
         	break;
+        case R.id.Home:
+        	Intent intent5 = new Intent(this, MainActivity.class);
+        	startActivity(intent5);
+        	break;
         }
         return super.onOptionsItemSelected(item);
 	}

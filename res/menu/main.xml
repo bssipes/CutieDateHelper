@@ -2,7 +2,7 @@
 
     <item
         android:id="@+id/menu_settings"
-        android:orderInCategory="1"
+        android:orderInCategory="4"
         android:showAsAction="ifRoom"
         android:title="@string/menu_settings"/>
     <item
@@ -17,8 +17,13 @@
         android:title="@string/menu_storeList"/>
     <item
         android:id="@+id/menu_julianConverter"
-        android:orderInCategory="3"
+        android:orderInCategory="1"
         android:showAsAction="ifRoom"
         android:title="@string/menu_j2g"/>
+    <item 
+        android:id="@+id/Home"
+        android:orderInCategory="5"
+        android:showAsAction="ifRoom"
+        android:title="Home" />
 
 </menu>

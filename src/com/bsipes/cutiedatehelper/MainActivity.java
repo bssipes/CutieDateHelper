@@ -256,7 +256,7 @@ public class MainActivity extends Activity
 		gc3.add(Calendar.DAY_OF_MONTH, 90);
 		gen3_bbqGallon.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gc3.add(Calendar.DAY_OF_MONTH, -90);
-//TODO: 
+
 		temp = (gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+" - ";
 		gc3.add(Calendar.DAY_OF_MONTH, 2);
 		temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n\t");
@@ -282,7 +282,7 @@ public class MainActivity extends Activity
 		gc3.add(Calendar.DAY_OF_MONTH, 5);
 		gen3_scrambledEggs.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
 		gc3.add(Calendar.DAY_OF_MONTH, -5);
-//TODO:		
+	
 		gc3.add(Calendar.DAY_OF_MONTH, divisions.get(divisionName).getB());
 		gen3_baconStrips.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gen3_baconCrumbles.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
@@ -355,6 +355,10 @@ public class MainActivity extends Activity
 		  Intent intent4 = new Intent(this, J2G.class);
 		  startActivity(intent4);
 		  break;
+        case R.id.Home:
+        	Intent intent5 = new Intent(this, MainActivity.class);
+        	startActivity(intent5);
+        	break;
         }
         return super.onOptionsItemSelected(item);
     }
