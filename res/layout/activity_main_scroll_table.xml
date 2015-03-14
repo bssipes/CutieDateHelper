@@ -243,6 +243,18 @@
         </TableRow>
 
         <!-- Gen3 Products -->
+       <TableRow
+            android:id="@+id/gen3_header"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+            <TextView
+                android:id="@+id/gen3_header_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen3_header" />
+            </TableRow>
 
         <TableRow
             android:id="@+id/gen3_ss"
@@ -263,8 +275,27 @@
                 android:layout_height="wrap_content"
                 android:text="softServe date" />
         </TableRow>
-
         <TableRow
+            android:id="@+id/gen3_ss_open"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen3_softServeOpen_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/softServeOpen" />
+
+            <TextView
+                android:id="@+id/gen3_softServeOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="softServeOpen date" />
+        </TableRow>
+<!-- No nfy in kitchens anymore -->
+<!--         <TableRow
             android:id="@+id/gen3_nfy"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -283,8 +314,9 @@
                 android:layout_height="wrap_content"
                 android:text="nonfatYogurt date" />
         </TableRow>
-
-        <TableRow
+ -->
+ <!-- sbm combined into softserve as they use the same dates -->
+ <!--        <TableRow
             android:id="@+id/gen3_sbm"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -303,6 +335,7 @@
                 android:layout_height="wrap_content"
                 android:text="smoothieBaseMix date" />
         </TableRow>
+-->
 
         <TableRow
             android:id="@+id/gen3_mds"

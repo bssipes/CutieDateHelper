@@ -48,9 +48,10 @@
     <string name="gen3_header"><b>Gen2.5 and Gen3</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
-    <string name="softServe">Soft Serve</string>
-    <string name="nonfatYogurt">NonFat Yogurt</string>
-    <string name="smoothieBaseMix">Smoothie Base Mix</string>
+    <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nSHELF UNOPENED</string>
+    <string name="softServeOpen">Opened</string>
+    <string name="nonfatYogurt">NonFat Yogurt</string> <!-- No longer used in the kitchens -->
+    <string name="smoothieBaseMix">Smoothie Base Mix</string> <!-- Combined into Van/Choc Soft Serve since they use the same dates -->
     <string name="moninDavinciSyrup">Monin/Davinci Syrup</string>
     <string name="ghiradelliDavinciSauce">Ghiradelli/Davinci Sauce</string>
     <string name="candyPieces">Candy Pieces</string>
@@ -115,7 +116,9 @@
     	    \n3)Read your resulting dates below the button.</string>
 
     <!-- The following strings are used in Division Store List -->
-    <string name="storeList_KC">150: 816-690-8569\n\n
+    <string name="storeList_KC">
+        Helpdesk: 1-800-375-0720\n\n
+        150: 816-690-8569\n\n
 	    151: 816-415-8700\n\n
 	    152: 816-795-7223\n\n
 	    153: 816-471-2886\n\n
