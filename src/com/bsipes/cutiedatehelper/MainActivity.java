@@ -171,6 +171,8 @@ public class MainActivity extends Activity
 		gc3.add(Calendar.DAY_OF_MONTH, 7);
 		temp = temp.concat((gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gen3_softServeOpen.setText(temp + "\nOR ORIGINAL\nSTICKER DATE");
+		gc3.add(Calendar.DAY_OF_MONTH, -7);
+		
 		
 		gc3.add(Calendar.DAY_OF_MONTH, 45);
 		gen3_moninDavinciSyrup.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
@@ -234,6 +236,7 @@ public class MainActivity extends Activity
 		gen3_sausage.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
 		gc3.add(Calendar.DAY_OF_MONTH, -divisions.get(divisionName).getPS());
 		gc3.add(Calendar.HOUR_OF_DAY, -4);
+		
 		
 		gc3.add(Calendar.DAY_OF_MONTH, 5);
 		gen3_pizzaSauce.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
