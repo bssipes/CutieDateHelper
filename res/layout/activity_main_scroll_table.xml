@@ -71,6 +71,23 @@
                 android:layout_height="wrap_content" />
         </TableRow>
 
+        <TableRow 
+            android:id="@+id/cd_version_tr"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp">
+            <TextView 
+                android:id="@+id/cd_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cd_version" />
+            <TextView
+                android:id="@+id/cd_version_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cd_version_value" />
+        </TableRow>
         <!-- Chili and Cheese -->
 
         <TableRow
@@ -294,48 +311,6 @@
                 android:layout_height="wrap_content"
                 android:text="softServeOpen date" />
         </TableRow>
-<!-- No nfy in kitchens anymore -->
-<!--         <TableRow
-            android:id="@+id/gen3_nfy"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="2.5dp" >
-
-            <TextView
-                android:id="@+id/gen3_nonfatYogurt_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nonfatYogurt" />
-
-            <TextView
-                android:id="@+id/gen3_nonfatYogurt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="nonfatYogurt date" />
-        </TableRow>
- -->
- <!-- sbm combined into softserve as they use the same dates -->
- <!--        <TableRow
-            android:id="@+id/gen3_sbm"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="2.5dp" >
-
-            <TextView
-                android:id="@+id/gen3_smoothieBaseMix_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/smoothieBaseMix" />
-
-            <TextView
-                android:id="@+id/gen3_smoothieBaseMix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="smoothieBaseMix date" />
-        </TableRow>
--->
 
         <TableRow
             android:id="@+id/gen3_mds"
@@ -395,26 +370,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="candyPieces date" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/gen3_eb"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="2.5dp" >
-
-            <TextView
-                android:id="@+id/gen3_espressoBiB_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/espressoBiB" />
-
-            <TextView
-                android:id="@+id/gen3_espressoBiB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="espressoBiB date" />
         </TableRow>
 
         <TableRow
