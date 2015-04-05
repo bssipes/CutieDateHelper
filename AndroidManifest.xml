@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bsipes.cutiedatehelper"
     android:versionCode="10"
-    android:versionName="1.64a" >
+    android:versionName="1.64b" >
 
     <uses-sdk
         android:minSdkVersion="8"

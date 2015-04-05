@@ -116,7 +116,7 @@ public class MainActivity extends Activity
 		TextView gen3_moninDavinciSyrup = (TextView) findViewById(R.id.gen3_moninDavinciSyrup);
 		TextView gen3_ghiradelliDavinciSauce = (TextView) findViewById(R.id.gen3_ghiradelliDavinciSauce);
 		TextView gen3_candyPieces = (TextView) findViewById(R.id.gen3_candyPieces);
-//concordia		
+		TextView gen3_milk = (TextView) findViewById(R.id.gen3_milkDate);
 		TextView gen3_smoothieJuice = (TextView) findViewById(R.id.gen3_smoothieJuice);
 		TextView gen3_smoothieAddins = (TextView) findViewById(R.id.gen3_smoothieAddins);
 		TextView gen3_frozenLemonades = (TextView) findViewById(R.id.gen3_frozenLemonades);
@@ -131,8 +131,8 @@ public class MainActivity extends Activity
 		TextView gen3_sausage = (TextView) findViewById(R.id.gen3_sausage);
 		TextView gen3_pizzaSauce = (TextView) findViewById(R.id.gen3_pizzaSauce);
 		TextView gen3_pizzaVegetables = (TextView) findViewById(R.id.gen3_pizzaVegetables);
-//tomato packs
-//lettuce bags
+		TextView gen3_tomatoPacks = (TextView) findViewById(R.id.gen3_tomato);
+		TextView gen3_lettuceBags = (TextView) findViewById(R.id.gen3_lettuce);
 		TextView gen3_kolaches = (TextView) findViewById(R.id.gen3_kolaches);
 		TextView gen3_toastedSandwiches = (TextView) findViewById(R.id.gen3_toastedSandwiches);
 		TextView gen3_flatbreads = (TextView) findViewById(R.id.gen3_flatbreads);
@@ -154,8 +154,8 @@ public class MainActivity extends Activity
 		TextView gen3_honeyMustardGallon = (TextView) findViewById(R.id.gen3_honeyMustardGallon);
 		TextView gen3_hamSlice = (TextView) findViewById(R.id.gen3_hamSlice);
 		TextView gen3_sausagePatty = (TextView) findViewById(R.id.gen3_sausagePatty);
-//cinnamon rolls
-//cream cheese icing
+		TextView gen3_cinnamonRoll = (TextView) findViewById(R.id.gen3_cinnamonRoll);
+		TextView gen3_creamCheese = (TextView) findViewById(R.id.gen3_creamCheese);
 		
 		
 //(gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+gc3.get(Calendar.MINUTE)
@@ -186,7 +186,7 @@ public class MainActivity extends Activity
 		gc3.add(Calendar.DAY_OF_MONTH, -60);
 	
 		gc3.add(Calendar.DAY_OF_MONTH, 7);
-//TODO: Add Milk Jugs for Concordia entry (7 days or Original MFG Date) 
+		gen3_milk.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gc3.add(Calendar.DAY_OF_MONTH, -7);		
 				
 		gc3.add(Calendar.DAY_OF_MONTH, 3);
@@ -242,11 +242,10 @@ public class MainActivity extends Activity
 		gc3.add(Calendar.DAY_OF_MONTH, -5);
 		
 		gen3_pizzaVegetables.setText("QTK DATED");
-		
-//TODO: Add Tomato Packs (QTK DATED)
+		gen3_tomatoPacks.setText("QTK DATED");
 		
 		gc3.add(Calendar.DAY_OF_MONTH, 3);
-//TODO: Add Lettuce Bags (3 days or ORIGINAL MFG DATE)
+		gen3_lettuceBags.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nSTICKER DATE");
 		gc3.add(Calendar.DAY_OF_MONTH, -3);
 		
 		temp = (gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n";
@@ -291,20 +290,24 @@ public class MainActivity extends Activity
 		gen3_cherries.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gc3.add(Calendar.DAY_OF_MONTH, -60);
 		
-//TODO: Obnoxiously add a 3rd date for once opened (5 days)
 		temp = (gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+" - ";
 		gc3.add(Calendar.DAY_OF_MONTH, 3);
 		temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n\t");
 		gc3.add(Calendar.DAY_OF_MONTH, 30);
-		temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n\nMFG DATE + 180D");
-		gc3.add(Calendar.DAY_OF_MONTH, -30);
-		gc3.add(Calendar.DAY_OF_MONTH, -3);
+		temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n\nMFG DATE + 180D\n\n");
+		gc3.add(Calendar.DAY_OF_MONTH, -33);
+		gc3.add(Calendar.DAY_OF_MONTH, 5);
+		temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
+		gc3.add(Calendar.DAY_OF_MONTH, -5);
 		gen3_sausageGravy.setText(temp);
 		
-//TODO: Add in dating for the shelf unopened (13 days)	
-		gc3.add(Calendar.DAY_OF_MONTH, 5);
-		gen3_scrambledEggs.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
+//TODO: Add in dating for the shelf unopened (13 days) (unopened first, then opened second)
+		gc3.add(Calendar.DAY_OF_MONTH, 13);
+		temp = (gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n\n";
+		gc3.add(Calendar.DAY_OF_MONTH, -8);
+		temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gc3.add(Calendar.DAY_OF_MONTH, -5);
+		gen3_scrambledEggs.setText(temp);
 	
 		gc3.add(Calendar.DAY_OF_MONTH, divisions.get(divisionName).getB());
 		gen3_baconStrips.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
@@ -334,14 +337,15 @@ public class MainActivity extends Activity
 		gen3_hamSlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");	
 		gc3.add(Calendar.DAY_OF_MONTH, -7);
 		
-		gc3.add(Calendar.DAY_OF_MONTH, 7);
+//TODO: When this becomes relevant, ask for clarification. CD Guide says "7 days or ..." instead of "7 days from open or ..." like others do.		
+		gc3.add(Calendar.DAY_OF_MONTH, 9);
 		gen3_sausagePatty.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+180D");
-		gc3.add(Calendar.DAY_OF_MONTH, -7);
+		gc3.add(Calendar.DAY_OF_MONTH, -9);
 		
-//TODO: Add Cinnamon Rolls (QTK DATED)
+		gen3_cinnamonRoll.setText("QTK DATED");
 		
 		gc3.add(Calendar.DAY_OF_MONTH, 30);
-//TODO: Add Cream Cheese Icing (30 days)
+		gen3_creamCheese.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 		gc3.add(Calendar.DAY_OF_MONTH, -30);
 		return;
 	}

@@ -55,6 +55,7 @@
     <string name="moninDavinciSyrup">Monin/Davinci Syrup</string>
     <string name="ghiradelliDavinciSauce">Ghiradelli/Davinci Sauce</string>
     <string name="candyPieces">Candy Pieces</string>
+    <string name="milk">Concordia Milk</string>
     <string name="smoothieJuice">Smoothie Juice</string>
     <string name="smoothieAddins">Smoothie Add-ins</string>
     <string name="frozenLemonades">Frozen Lemonades Shelf\n\nFrozen Lemonades Open</string>
@@ -69,6 +70,8 @@
     <string name="sausage">Sausage</string>
     <string name="pizzaSauce">Pizza Sauce</string>
     <string name="pizzaVegetables">Pizza Vegetables</string>
+    <string name="tomatoPacks">Tomato Packs</string>
+    <string name="lettuceBags">Lettuce Bags</string>
     <string name="kolaches">Kolaches</string>
     <string name="toastedSandwiches">Toasted Sandwiches</string>
     <string name="flatbreads">Flatbreads</string>
@@ -77,10 +80,10 @@
     <string name="chipMayoSqueeze">Chipotle Mayo Squeeze Bottle</string>
     <string name="bbqSqueeze">BBQ Squeeze Bottle</string>
     <string name="bbqGallon">BBQ Gallon</string>
-    <string name="eggPatty">Egg Patty Pull-Thaw\n\tExpiration</string>
+    <string name="eggPatty">Egg Patty</string>
     <string name="cherries">Cherries</string>
-    <string name="sausageGravy">Sausage Gravy Thawed\n\n\nSausage Gravy Frozen</string>
-    <string name="scrambledEggs">Scrambled Eggs</string>
+    <string name="sausageGravy">Sausage Gravy Thawed\n\n\nSausage Gravy Frozen\n\nSausage Gravy Opened</string>
+    <string name="scrambledEggs">Scrambled Eggs Shelf\n\nScrambled Eggs Opened</string>
     <string name="baconStrips">Bacon Strips</string>
     <string name="baconCrumbles">Bacon Crumbles</string>
     <string name="joyCones">Joy Cones</string>
@@ -91,6 +94,8 @@
     <string name="honeyMustardGallon">Honey Mustard Gallon</string>
     <string name="hamSlice">Ham Slices</string>
     <string name="sausagePatty">Sausage Patty</string>
+    <string name="cinnamonRoll">Cinnamon Roll</string>
+    <string name="creamCheese">Cream Cheese Icing</string>
     
  <!-- The following strings are used in About -->
     <string name="about_greeting">Hello and welcome to the CutieDateHelper.

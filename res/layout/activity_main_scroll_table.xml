@@ -371,7 +371,24 @@
                 android:layout_height="wrap_content"
                 android:text="candyPieces date" />
         </TableRow>
+		<TableRow
+		    android:id="@+id/gen3_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+            <TextView
+                android:id="@+id/gen3_milk_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milk" />
 
+            <TextView
+                android:id="@+id/gen3_milkDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="concordiaMilk date" />
+        </TableRow>
         <TableRow
             android:id="@+id/gen3_sj"
             android:layout_width="wrap_content"
@@ -615,7 +632,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
             android:text="pizzaVegetables date" />			
+			</TableRow>	
+		<TableRow
+            android:id="@+id/gen3_tom"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_tomato_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/tomatoPacks" />
+			<TextView
+            android:id="@+id/gen3_tomato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="tomatoPacks date" />			
 			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_let"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_lettuce_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/lettuceBags" />
+			<TextView
+            android:id="@+id/gen3_lettuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="lettuceBags date" />			
+			</TableRow>
+		
 		<TableRow
             android:id="@+id/gen3_k"
             android:layout_width="wrap_content"
@@ -973,6 +1025,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
             android:text="sausagePatty date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_cr"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_cinnamonRoll_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/cinnamonRoll" />
+			<TextView
+            android:id="@+id/gen3_cinnamonRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="cinnamonRoll date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_cci"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_creamCheese_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/creamCheese" />
+			<TextView
+            android:id="@+id/gen3_creamCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="creamCheese date" />
 	</TableRow>
     </TableLayout>
 </ScrollView>
