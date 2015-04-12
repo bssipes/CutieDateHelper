@@ -18,10 +18,23 @@
         android:layout_height="wrap_content"
         android:entries="@array/search_divisions_array"
         android:prompt="@string/search_prompt" />
+
+    <CheckBox
+        android:id="@+id/gen2jul_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Gen2 Products as Julian Days?" />
+
+    <CheckBox
+        android:id="@+id/gen3jul_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Gen3 Products as Julian Days?" />
+
     <Button
         android:id="@+id/SaveAndSubmit_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save Default and Submit Search" />
+        android:text="Save Defaults and Submit" />
 
 </LinearLayout>

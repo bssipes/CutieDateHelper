@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 
 public class Settings extends Activity implements OnClickListener {
@@ -16,6 +17,8 @@ public class Settings extends Activity implements OnClickListener {
 	Spinner defaultDivision_S;
 	Spinner searchDivision_S;
 	Button saveAndSubmit_Button;
+	CheckBox gen2jul;
+	CheckBox gen3jul;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +29,17 @@ public class Settings extends Activity implements OnClickListener {
 		searchDivision_S = (Spinner) findViewById(R.id.SearchDivision_S);
 		saveAndSubmit_Button = (Button) findViewById(R.id.SaveAndSubmit_Button);
 		saveAndSubmit_Button.setOnClickListener(this);
+		gen2jul = (CheckBox)findViewById(R.id.gen2jul_cb);
+		gen3jul = (CheckBox)findViewById(R.id.gen3jul_cb);
 		loadSavedPreferences();
 	}
 
 	private void loadSavedPreferences() {
 		SharedPreferences CDHSettings = getSharedPreferences(CDHLS,
 				Context.MODE_PRIVATE);
-
 		defaultDivision_S.setSelection(CDHSettings.getInt("defaultDivision", 3)); //3 for KC
+		gen2jul.setChecked(CDHSettings.getBoolean("gen2jul", true));
+		gen3jul.setChecked(CDHSettings.getBoolean("gen3jul", false));
 	}
 	
 	private void savePreferences(String key, int value) {
@@ -44,10 +50,20 @@ public class Settings extends Activity implements OnClickListener {
 		editor.commit();
 	}
 	
+	private void savePreferences(String key, boolean value) {
+		SharedPreferences CDHSettings = getSharedPreferences(CDHLS,
+				Context.MODE_PRIVATE);
+		SharedPreferences.Editor editor = CDHSettings.edit();
+		editor.putBoolean(key, value);
+		editor.commit();
+	}
+	
+	
 	@Override
 	public void onClick(View v) {
 		savePreferences("defaultDivision", defaultDivision_S.getSelectedItemPosition());
-		
+		savePreferences("gen2jul", gen2jul.isChecked());
+		savePreferences("gen3jul", gen3jul.isChecked());
 		// pass the user data to the main activity
 		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 		
@@ -76,6 +92,18 @@ public class Settings extends Activity implements OnClickListener {
 			intent.putExtra("divisionName", "OTHER"); break;
 		default: //shouldn't ever hit the default. if it does, the IF statement above isn't logically correct, or the switch isn't correct
 			intent.putExtra("divisionName", "ERROR"); 
+		}
+		if (gen2jul.isChecked())
+		{
+			intent.putExtra("gen2jul", true);
+		}else{
+			intent.putExtra("gen2jul", false);
+		}
+		if (gen3jul.isChecked())
+		{
+			intent.putExtra("gen3jul", true);
+		}else{
+			intent.putExtra("gen3jul", false);
 		}
 		startActivity(intent);
 		return;

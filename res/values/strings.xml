@@ -45,7 +45,6 @@
     <string name="gen2_wallcoolerburritos">WallCooler Burritos</string>
     <string name="gen2_wallcoolerhotpockets">WallCooler Hot Pockets</string>
     <string name="gen2_nemo">Nemo Cakes</string>
-    <string name="gen3_header"><b>Gen2.5 and Gen3</b></string>
     <string name="cd_version"><b>CD Guide Date</b></string>
     <string name="cd_version_value"><b>April 3, 2015</b></string>
 
@@ -58,7 +57,8 @@
     <string name="milk">Concordia Milk</string>
     <string name="smoothieJuice">Smoothie Juice</string>
     <string name="smoothieAddins">Smoothie Add-ins</string>
-    <string name="frozenLemonades">Frozen Lemonades Shelf\n\nFrozen Lemonades Open</string>
+    <string name="frozenLemonadesShelf">Frozen Lemonades Shelf</string>
+    <string name="frozenLemonadesOpen">Frozen Lemonades Open</string>
     <string name="phaseButterSub">Phase Butter Sub</string>
     <string name="pretzels">Pretzels</string>
     <string name="pretzelCheeseMarinara">Pretzel Cheese and Marinara</string>
@@ -82,8 +82,10 @@
     <string name="bbqGallon">BBQ Gallon</string>
     <string name="eggPatty">Egg Patty</string>
     <string name="cherries">Cherries</string>
-    <string name="sausageGravy">Sausage Gravy Thawed\n\n\nSausage Gravy Frozen\n\nSausage Gravy Opened</string>
-    <string name="scrambledEggs">Scrambled Eggs Shelf\n\nScrambled Eggs Opened</string>
+    <string name="sausageGravyShelf">Sausage Gravy Shelf</string>
+    <string name="sausageGravyOpen">Sausage Gravy Open</string>
+    <string name="scrambledEggsShelf">Scrambled Eggs Shelf</string>
+    <string name="scrambledEggsOpen">Scrambled Eggs Opened</string>
     <string name="baconStrips">Bacon Strips</string>
     <string name="baconCrumbles">Bacon Crumbles</string>
     <string name="joyCones">Joy Cones</string>

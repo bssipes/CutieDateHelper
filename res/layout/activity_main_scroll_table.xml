@@ -49,7 +49,9 @@
             <TextView
                 android:id="@+id/gregorian_TV"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="calendarDate" />
+
         </TableRow>
 
         <TableRow
@@ -68,7 +70,9 @@
             <TextView
                 android:id="@+id/julian_TV"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="julianDate" />
+
         </TableRow>
 
         <TableRow 
@@ -87,6 +91,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cd_version_value" />
+        </TableRow> 
+        <TableRow 
+            android:id="@+id/gen2_button_row"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <Button
+                android:id="@+id/gen2_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="swapGen2"
+                android:text="Swap Gen2 Dates"
+                android:textSize="13dp" />
+       
         </TableRow>
         <!-- Chili and Cheese -->
 
@@ -260,18 +280,21 @@
         </TableRow>
 
         <!-- Gen3 Products -->
-       <TableRow
-            android:id="@+id/gen3_header"
+        <TableRow 
+            android:id="@+id/gen3_button_row"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="2.5dp" >
-            <TextView
-                android:id="@+id/gen3_header_intro"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/gen3_button"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/gen3_header" />
-            </TableRow>
+                android:onClick="swapGen3"
+                android:text="Swap Gen3 Dates"
+                android:textSize="13dp" />
+
+        </TableRow>    
 
         <TableRow
             android:id="@+id/gen3_ss"
@@ -430,21 +453,38 @@
         </TableRow>
         
         <TableRow
-            android:id="@+id/gen3_fl"
+            android:id="@+id/gen3_flShelf"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="2.5dp" >
 			<TextView
-            android:id="@+id/gen3_frozenLemonades_label"
+            android:id="@+id/gen3_frozenLemonadesShelf_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="@string/frozenLemonades" />
+            android:text="@string/frozenLemonadesShelf" />
 			<TextView
-            android:id="@+id/gen3_frozenLemonades"
+            android:id="@+id/gen3_frozenLemonadesShelf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="frozenLemonades date" />
+            android:text="frozenLemonadesShelf date" />
+			</TableRow>
+		<TableRow
+            android:id="@+id/gen3_flOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_frozenLemonadesOpen_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/frozenLemonadesOpen" />
+			<TextView
+            android:id="@+id/gen3_frozenLemonadesOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="frozenLemonadesOpen date" />
 			</TableRow>
         <TableRow
             android:id="@+id/gen3_pbs"
@@ -839,38 +879,72 @@
             android:text="cherries date" />	
 	</TableRow>
 	<TableRow
-            android:id="@+id/gen3_sg"
+            android:id="@+id/gen3_sg_shelf"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="2.5dp" >
 			<TextView
-            android:id="@+id/gen3_sausageGravy_label"
+            android:id="@+id/gen3_sausageGravyShelf_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="@string/sausageGravy" />
+            android:text="@string/sausageGravyShelf" />
 			<TextView
-            android:id="@+id/gen3_sausageGravy"
+            android:id="@+id/gen3_sausageGravyShelf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="sausageGravy date" />
+            android:text="sausageGravyShelf date" />
 	</TableRow>
 	<TableRow
-            android:id="@+id/gen3_se"
+            android:id="@+id/gen3_sg_open"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="2.5dp" >
 			<TextView
-            android:id="@+id/gen3_scrambledEggs_label"
+            android:id="@+id/gen3_sausageGravyOpen_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="@string/scrambledEggs" />
+            android:text="@string/sausageGravyOpen" />
 			<TextView
-            android:id="@+id/gen3_scrambledEggs"
+            android:id="@+id/gen3_sausageGravyOpen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="scrambledEggs date" />
+            android:text="sausageGravyOpen date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_se_shelf"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_scrambledEggsShelf_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/scrambledEggsShelf" />
+			<TextView
+            android:id="@+id/gen3_scrambledEggsShelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="scrambledEggsShelf date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_se_open"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_scrambledEggsOpen_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/scrambledEggsOpen" />
+			<TextView
+            android:id="@+id/gen3_scrambledEggsOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="scrambledEggsOpen date" />
 	</TableRow>
 	<TableRow
             android:id="@+id/gen3_bs"
