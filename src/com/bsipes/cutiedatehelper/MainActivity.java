@@ -24,14 +24,15 @@ public class MainActivity extends Activity
 	public int julian = 0;
 	
 	//Refer to Division Constructor to see what all the numbers are being linked to
-	Division STL = new	Division("STL", 	5,7,7 ,7, 14,13,30,10,7,7); //St Louis
-	Division CAR = new	Division("CAR", 	5,7,7 ,7, 14,13,30,5,5,5); //Carolinas
-	Division WIC = new	Division("WIC", 	5,7,7 ,7, 14,13,30,7,7,7); //Wichita
-	Division IA = new	Division("IA",  	5,7,7 ,7, 14,13,30,10,7,7); //Iowa
-	Division ATL = new	Division("ATL", 	5,7,10,7 ,14,13,30,10,7,7); //10 days for grillfood
-	Division PHO = new	Division("PHO", 	5,7,7 ,10,14,13,30,7,7,7); //10 days for hotzi
-	Division KC = new	Division("KC",		5,7,7 ,10,14,13,30,7,7,7); //10 days for hotzi
-	Division OTHER = new Division("OTHER",	5,7,10,10,14,13,30,10,7,7); //10 days for grillfood AND 10 days for hotzi
+//public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo, int inPepSaus, int inEP, int inBacon)
+	Division STL = new	Division("STL", 	5,8,8 ,7 ,15,14,31,11,8,8); //St Louis
+	Division CAR = new	Division("CAR", 	5,8,8 ,7 ,15,14,31,6 ,6,6); //Carolinas
+	Division WIC = new	Division("WIC", 	5,8,8 ,7 ,15,14,31,8 ,8,8); //Wichita
+	Division IA = new	Division("IA",  	5,8,7 ,7 ,15,14,31,11,8,8); //Iowa
+	Division ATL = new	Division("ATL", 	5,8,11,7 ,15,14,31,11,8,8); //11 days for grillfood
+	Division PHO = new	Division("PHO", 	5,8,8 ,11,15,14,31,8 ,8,8); //11 days for hotzi
+	Division KC = new	Division("KC",		5,8,8 ,11,15,14,31,8 ,8,8); //11 days for hotzi
+	Division OTHER = new Division("OTHER",	5,8,11,11,15,14,31,11,8,8); //11 days for grillfood AND 11 days for hotzi
 	
 	public void main() 
 	{
@@ -84,6 +85,7 @@ public class MainActivity extends Activity
 		TextView gen2_wallcoolerburritos_date = (TextView) findViewById(R.id.gen2_wallcoolerburritos_date);
 		TextView gen2_wallcoolerhotpockets_date = (TextView) findViewById(R.id.gen2_wallcoolerhotpockets_date);
 		TextView gen2_nemo_date = (TextView) findViewById(R.id.gen2_nemo_date);
+		TextView gen2_keylime_date = (TextView) findViewById(R.id.gen2_keylime_date);
 		
 		if (gen2jul == true) 
 		{
@@ -108,6 +110,8 @@ public class MainActivity extends Activity
 					checkRollover(divisions.get(divisionName).getWCHP())));
 			gen2_nemo_date.setText(String.format("%03d", julian) + String.format("%03d", 
 					checkRollover(divisions.get(divisionName).getNemo())));
+			gen2_keylime_date.setText(String.format("%03d", julian) + String.format("%03d", 
+					checkRollover(10))); //TODO: WARNING HARDCODED VALUE			
 		} 
 		else
 		{
@@ -172,6 +176,12 @@ public class MainActivity extends Activity
 					String.format("%02d", gc2.get(Calendar.DAY_OF_MONTH))+
 					String.valueOf(shortYear));
 			gc2.add(Calendar.DAY_OF_MONTH, -divisions.get(divisionName).getNemo());
+			
+			gc2.add(Calendar.DAY_OF_MONTH, 10);
+			gen2_keylime_date.setText(String.format("%02d", gc2.get(Calendar.MONTH)+1)+
+					String.format("%02d", gc2.get(Calendar.DAY_OF_MONTH))+
+					String.valueOf(shortYear));
+			gc2.add(Calendar.DAY_OF_MONTH, -10);
 		}
 	}
 	
@@ -232,16 +242,16 @@ public class MainActivity extends Activity
 		if (gen3jul == false) {
 			gc3.add(Calendar.DAY_OF_MONTH, 3);
 			temp = (gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n";
-			gc3.add(Calendar.DAY_OF_MONTH, 10);
+			gc3.add(Calendar.DAY_OF_MONTH, 11);
 			temp = temp.concat((gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 			gen3_softServe.setText(temp);
-			gc3.add(Calendar.DAY_OF_MONTH, -13);
+			gc3.add(Calendar.DAY_OF_MONTH, -14);
 			
 			temp = (gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n";
-			gc3.add(Calendar.DAY_OF_MONTH, 7);
+			gc3.add(Calendar.DAY_OF_MONTH, 8);
 			temp = temp.concat((gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 			gen3_softServeOpen.setText(temp + "\nOR ORIGINAL\nSTICKER DATE");
-			gc3.add(Calendar.DAY_OF_MONTH, -7);
+			gc3.add(Calendar.DAY_OF_MONTH, -8);
 			
 			gc3.add(Calendar.DAY_OF_MONTH, 45);
 			gen3_moninDavinciSyrup.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
@@ -270,21 +280,21 @@ public class MainActivity extends Activity
 			gc3.add(Calendar.DAY_OF_MONTH, -61);
 			
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 21);
+			gc3.add(Calendar.DAY_OF_MONTH, 22);
 			gen3_frozenLemonadesOpen.setText((gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nSTICKER DATE");
-			gc3.add(Calendar.DAY_OF_MONTH, -21);
+			gc3.add(Calendar.DAY_OF_MONTH, -22);
 				
-			gen3_phaseButterSub.setText("MFG DATE + 270D");
+			gen3_phaseButterSub.setText("MFG DATE +270D");
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 2);
+			gc3.add(Calendar.DAY_OF_MONTH, 3);
 			gc3.add(Calendar.HOUR_OF_DAY, 4);
 			gen3_pretzels.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
-			gc3.add(Calendar.DAY_OF_MONTH, -2);
+			gc3.add(Calendar.DAY_OF_MONTH, -3);
 			gc3.add(Calendar.HOUR_OF_DAY, -4);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 5);
+			gc3.add(Calendar.DAY_OF_MONTH, 6);
 			gen3_pretzelCheeseMarinara.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -5);
+			gc3.add(Calendar.DAY_OF_MONTH, -6);
 
 			gen3_pretzelToppings.setText("QTK DATED");
 			
@@ -296,9 +306,9 @@ public class MainActivity extends Activity
 			gen3_pizzaCrust16.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
 			gc3.add(Calendar.HOUR_OF_DAY, -30);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 7);
+			gc3.add(Calendar.DAY_OF_MONTH, 8);
 			gen3_pizzaCheese.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -7);
+			gc3.add(Calendar.DAY_OF_MONTH, -8);
 				
 			gc3.add(Calendar.DAY_OF_MONTH, divisions.get(divisionName).getPS());
 			gc3.add(Calendar.HOUR_OF_DAY, 4);
@@ -315,17 +325,17 @@ public class MainActivity extends Activity
 			gen3_pizzaVegetables.setText("QTK DATED");
 			gen3_tomatoPacks.setText("QTK DATED");
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 3);
-			gen3_lettuceBags.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nSTICKER DATE");
-			gc3.add(Calendar.DAY_OF_MONTH, -3);
+			gc3.add(Calendar.DAY_OF_MONTH, 4);
+			gen3_lettuceBags.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG +17");
+			gc3.add(Calendar.DAY_OF_MONTH, -4);
 			
 			temp = (gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n";
 			gc3.add(Calendar.DAY_OF_MONTH, 1);
 			temp = temp.concat(gc3.get(Calendar.MONTH)+1 + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n");
-			gc3.add(Calendar.DAY_OF_MONTH, 5);
+			gc3.add(Calendar.DAY_OF_MONTH, 6);
 			temp = temp.concat(gc3.get(Calendar.MONTH)+1 + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n");
 			gen3_kolaches.setText(temp + gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
-			gc3.add(Calendar.DAY_OF_MONTH, -6);
+			gc3.add(Calendar.DAY_OF_MONTH, -7);
 			
 			gen3_toastedSandwiches.setText("QTK DATED");
 			gen3_flatbreads.setText("QTK DATED");
@@ -336,9 +346,9 @@ public class MainActivity extends Activity
 			gen3_ranchGallon.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 			gc3.add(Calendar.MONTH, -2);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 21);
+			gc3.add(Calendar.DAY_OF_MONTH, 22);
 			gen3_chipMayoSqueeze.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+180D");
-			gc3.add(Calendar.DAY_OF_MONTH, -21);
+			gc3.add(Calendar.DAY_OF_MONTH, -22);
 
 			gc3.add(Calendar.DAY_OF_MONTH, 30);
 			gen3_bbqSqueeze.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nGALLON DATE");
@@ -387,17 +397,17 @@ public class MainActivity extends Activity
 			
 			gen3_joyCones.setText("MFG DATE + 24M");
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 14);
+			gc3.add(Calendar.DAY_OF_MONTH, 15);
 			gen3_frappeBase.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -14);
+			gc3.add(Calendar.DAY_OF_MONTH, -15);
 			
-//TODO: Ask for clarification. CD Guide says "4 days or ..." instead of "4 days from open or ..." like others do.			
+//TODO: Ask for clarification. CD Guide says "5 days or ..." instead of "5 days from open or ..." like others do.			
 			temp = (gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+" - ";
 			gc3.add(Calendar.DAY_OF_MONTH, 2);
 			temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n\t");
-			gc3.add(Calendar.DAY_OF_MONTH, 4);
+			gc3.add(Calendar.DAY_OF_MONTH, 5);
 			temp = temp.concat((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -6);
+			gc3.add(Calendar.DAY_OF_MONTH, -7);
 			gen3_chickenTenders.setText(temp);
 	 
 			gen3_honeyMustardSqueeze.setText("Use Date On\nOpened Gallon");
@@ -405,28 +415,25 @@ public class MainActivity extends Activity
 			gen3_honeyMustardGallon.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nBOTTLE DATE");
 			gc3.add(Calendar.DAY_OF_MONTH, -30);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 7);
+			gc3.add(Calendar.DAY_OF_MONTH, 8);
 			gen3_hamSlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");	
-			gc3.add(Calendar.DAY_OF_MONTH, -7);
+			gc3.add(Calendar.DAY_OF_MONTH, -8);
 			
-//TODO: Ask for clarification. CD Guide says "7 days or ..." instead of "7 days from open or ..." like others do.		
-			gc3.add(Calendar.DAY_OF_MONTH, 9);
+//TODO: Ask for clarification. CD Guide says 2 days thaw and then "8 days or ..." instead of "8 days from open or ..." like others do.		
+			gc3.add(Calendar.DAY_OF_MONTH, 10);
 			gen3_sausagePatty.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+180D");
-			gc3.add(Calendar.DAY_OF_MONTH, -9);
+			gc3.add(Calendar.DAY_OF_MONTH, -10);
 			
 			gen3_cinnamonRoll.setText("QTK DATED");
-			
-			gc3.add(Calendar.DAY_OF_MONTH, 30);
-			gen3_creamCheese.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -30);
+			gen3_creamCheese.setText("MFG +4Months");
 		} else {
 //Gen3 products in Julian Dating			
 			gen3_softServe.setText(String.format("%03d", 
 					checkRollover(3)) + ", " + String.format("%03d", 
-					checkRollover(13)));
+					checkRollover(14)));
 			gen3_softServeOpen.setText(String.format("%03d", 
 					checkRollover(0)) + ", " + String.format("%03d", 
-					checkRollover(7)) + "\nOR ORIGINAL\nSTICKER DATE");
+					checkRollover(8)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_moninDavinciSyrup.setText(String.format("%03d",
 					checkRollover(45)));
 			gen3_ghiradelliDavinciSauce.setText(String.format("%03d",
@@ -443,33 +450,32 @@ public class MainActivity extends Activity
 					checkRollover(1)) + ", " + String.format("%03d",
 					checkRollover(61)));
 			gen3_frozenLemonadesOpen.setText(String.format("%03d", 
-					checkRollover(21)) + "\nOR ORIGINAL\nSTICKER DATE");
+					checkRollover(22)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_phaseButterSub.setText("MFG DATE + 270D");
 			gen3_pretzels.setText(String.format("%03d",
-					checkRollover(0)));
 			gen3_pretzelCheeseMarinara.setText(String.format("%03d",
-					checkRollover(0)));
+					checkRollover(6)));
 			gen3_pretzelToppings.setText("QTK DATED");
 			gen3_pizzaCrust7.setText(String.format("%03d",
 					checkRollover(2)) + "+6HOURS");
 			gen3_pizzaCrust16.setText(String.format("%03d",
 					checkRollover(1)) + "+6HOURS");
 			gen3_pizzaCheese.setText(String.format("%03d",
-					checkRollover(7)));
+					checkRollover(8)));
 			gen3_pepperoni.setText(String.format("%03d",
 					checkRollover(divisions.get(divisionName).getPS())));
 			gen3_sausage.setText(String.format("%03d",
 					checkRollover(divisions.get(divisionName).getPS())));
 			gen3_pizzaSauce.setText(String.format("%03d",
-					checkRollover(5)));
+					checkRollover(6)));
 			gen3_pizzaVegetables.setText("QTK DATED");
 			gen3_tomatoPacks.setText("QTK DATED");
 			gen3_lettuceBags.setText(String.format("%03d",
-					checkRollover(3)) + "\nOR ORIGINAL\nSTICKER DATE");
+					checkRollover(4)) + "\nOR MFG +17");
 			gen3_kolaches.setText(String.format("%03d",
 					checkRollover(0)) + ", " + String.format("%03d", 
 					checkRollover(1)) + ", " + String.format("%03d",
-					checkRollover(6)));
+					checkRollover(7)));
 			gen3_toastedSandwiches.setText("QTK DATED");
 			gen3_flatbreads.setText("QTK DATED");
 			gen3_ranchSqueeze.setText("Use Date On\nOpened Gallon");
@@ -479,7 +485,7 @@ public class MainActivity extends Activity
 						(gc3.get(Calendar.DAY_OF_YEAR))));
 				gc3.add(Calendar.MONTH, -2);
 			gen3_chipMayoSqueeze.setText(String.format("%03d",
-					checkRollover(21)) + "\nOR MFG+180D"); 
+					checkRollover(22)) + "\nOR MFG+180D"); 
 			gen3_bbqSqueeze.setText(String.format("%03d",
 					checkRollover(30))+"\nOR ORIGINAL\nGALLON DATE");
 			gen3_bbqGallon.setText(String.format("%03d",
@@ -506,23 +512,22 @@ public class MainActivity extends Activity
 			gen3_joyCones.setText("MFG DATE + 24M");
 			gen3_frappeBase.setText(String.format("%03d",
 					checkRollover(0)) + ", " + String.format("%03d", 
-					checkRollover(14)));
-//TODO: Ask for clarification. CD Guide says "4 days or ..." instead of "4 days from open or ..." like others do.
+					checkRollover(15)));
+//TODO: Ask for clarification. CD Guide says "5 days or ..." instead of "5 days from open or ..." like others do.
 			gen3_chickenTenders.setText(String.format("%03d",
 					checkRollover(2)) + ", " + String.format("%03d",
-					checkRollover(6)));
+					checkRollover(7)));
 			gen3_honeyMustardSqueeze.setText("Use Date On\nOpened Gallon");
 			gen3_honeyMustardGallon.setText(String.format("%03d",
 					checkRollover(30)));
 			gen3_hamSlice.setText(String.format("%03d",
-					checkRollover(7)));
-//TODO: Ask for clarification. CD Guide says "7 days or ..." instead of "7 days from open or ..." like others do.			
+					checkRollover(8)));
+//TODO: Ask for clarification. CD Guide says "8 days or ..." instead of "8 days from open or ..." like others do.			
 			gen3_sausagePatty.setText(String.format("%03d",
-					checkRollover(9)));
+					checkRollover(2)) + ", " + String.format("%03d",
+					checkRollover(10)));
 			gen3_cinnamonRoll.setText("QTK DATED");
-			gen3_creamCheese.setText(String.format("%03d",
-					checkRollover(0)) + ", " + String.format("%03d", 
-					checkRollover(30)));
+			gen3_creamCheese.setText("MFG +4Months");
 		}
 		return;
 	}

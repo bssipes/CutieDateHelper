@@ -45,12 +45,13 @@
     <string name="gen2_wallcoolerburritos">WallCooler Burritos</string>
     <string name="gen2_wallcoolerhotpockets">WallCooler Hot Pockets</string>
     <string name="gen2_nemo">Nemo Cakes</string>
+    <string name="gen2_keylime">Edwards Keylime Pie</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>April 3, 2015</b></string>
+    <string name="cd_version_value"><b>May 19, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
     <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nSHELF UNOPENED</string>
-    <string name="softServeOpen">Opened</string>
+    <string name="softServeOpen">SS Opened</string>
     <string name="moninDavinciSyrup">Monin/Davinci Syrup</string>
     <string name="ghiradelliDavinciSauce">Ghiradelli/Davinci Sauce</string>
     <string name="candyPieces">Candy Pieces</string>
