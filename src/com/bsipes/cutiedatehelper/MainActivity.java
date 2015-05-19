@@ -453,6 +453,7 @@ public class MainActivity extends Activity
 					checkRollover(22)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_phaseButterSub.setText("MFG DATE + 270D");
 			gen3_pretzels.setText(String.format("%03d",
+					checkRollover(3)) + "+4HOURS");
 			gen3_pretzelCheeseMarinara.setText(String.format("%03d",
 					checkRollover(6)));
 			gen3_pretzelToppings.setText("QTK DATED");
