@@ -253,13 +253,13 @@ public class MainActivity extends Activity
 			gen3_softServeOpen.setText(temp + "\nOR ORIGINAL\nSTICKER DATE");
 			gc3.add(Calendar.DAY_OF_MONTH, -8);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 45);
+			gc3.add(Calendar.DAY_OF_MONTH, 46);
 			gen3_moninDavinciSyrup.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -45);
+			gc3.add(Calendar.DAY_OF_MONTH, -46);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 21);
+			gc3.add(Calendar.DAY_OF_MONTH, 22);
 			gen3_ghiradelliDavinciSauce.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -21);
+			gc3.add(Calendar.DAY_OF_MONTH, -22);
 			
 			gc3.add(Calendar.DAY_OF_MONTH, 60);
 			gen3_candyPieces.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
@@ -318,9 +318,9 @@ public class MainActivity extends Activity
 			gc3.add(Calendar.HOUR_OF_DAY, -4);
 			
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 5);
+			gc3.add(Calendar.DAY_OF_MONTH, 6);
 			gen3_pizzaSauce.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -5);
+			gc3.add(Calendar.DAY_OF_MONTH, -6);
 			
 			gen3_pizzaVegetables.setText("QTK DATED");
 			gen3_tomatoPacks.setText("QTK DATED");
@@ -435,9 +435,9 @@ public class MainActivity extends Activity
 					checkRollover(0)) + ", " + String.format("%03d", 
 					checkRollover(8)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_moninDavinciSyrup.setText(String.format("%03d",
-					checkRollover(45)));
+					checkRollover(46)));
 			gen3_ghiradelliDavinciSauce.setText(String.format("%03d",
-					checkRollover(21)));
+					checkRollover(22)));
 			gen3_candyPieces.setText(String.format("%03d",
 					checkRollover(60)));
 			gen3_milk.setText(String.format("%03d", 
@@ -464,9 +464,9 @@ public class MainActivity extends Activity
 			gen3_pizzaCheese.setText(String.format("%03d",
 					checkRollover(8)));
 			gen3_pepperoni.setText(String.format("%03d",
-					checkRollover(divisions.get(divisionName).getPS())));
+					checkRollover(divisions.get(divisionName).getPS())) + "+4HOURS");
 			gen3_sausage.setText(String.format("%03d",
-					checkRollover(divisions.get(divisionName).getPS())));
+					checkRollover(divisions.get(divisionName).getPS())) + "+4HOURS");
 			gen3_pizzaSauce.setText(String.format("%03d",
 					checkRollover(6)));
 			gen3_pizzaVegetables.setText("QTK DATED");
