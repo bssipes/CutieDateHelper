@@ -47,7 +47,7 @@
     <string name="gen2_nemo">Nemo Cakes</string>
     <string name="gen2_keylime">Edwards Keylime Pie</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>May 19, 2015</b></string>
+    <string name="cd_version_value"><b>June 19, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
     <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nSHELF UNOPENED</string>
@@ -95,6 +95,7 @@
     <string name="chickenTenders">Chicken Tenders</string>
     <string name="honeyMustardSqueeze">Honey Mustard Squeeze</string>
     <string name="honeyMustardGallon">Honey Mustard Gallon</string>
+    <string name="turkeySlice">Turkey Slices</string>
     <string name="hamSlice">Ham Slices</string>
     <string name="sausagePatty">Sausage Patty</string>
     <string name="cinnamonRoll">Cinnamon Roll</string>

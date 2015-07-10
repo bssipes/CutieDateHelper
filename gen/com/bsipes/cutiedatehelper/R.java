@@ -28,11 +28,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int DefaultDivision_S=0x7f0900c4;
+        public static final int DefaultDivision_S=0x7f0900c7;
         public static final int DisplayStoreNumber_TV=0x7f09000b;
-        public static final int Home=0x7f0900ce;
-        public static final int SaveAndSubmit_Button=0x7f0900c8;
-        public static final int SearchDivision_S=0x7f0900c5;
+        public static final int Home=0x7f0900d1;
+        public static final int SaveAndSubmit_Button=0x7f0900cb;
+        public static final int SearchDivision_S=0x7f0900c8;
         public static final int about_greeting=0x7f090000;
         public static final int cd_version=0x7f090013;
         public static final int cd_version_TV=0x7f090014;
@@ -68,7 +68,7 @@ public final class R {
         public static final int gen2_whippedTopper_date=0x7f09001c;
         public static final int gen2_whippedTopper_date_label=0x7f09001b;
         public static final int gen2_wtc=0x7f09001a;
-        public static final int gen2jul_cb=0x7f0900c6;
+        public static final int gen2jul_cb=0x7f0900c9;
         public static final int gen3_baconCrumbles=0x7f0900a8;
         public static final int gen3_baconCrumbles_label=0x7f0900a7;
         public static final int gen3_baconStrips=0x7f0900a5;
@@ -85,7 +85,7 @@ public final class R {
         public static final int gen3_button_row=0x7f090032;
         public static final int gen3_candyPieces=0x7f090042;
         public static final int gen3_candyPieces_label=0x7f090041;
-        public static final int gen3_cci=0x7f0900c1;
+        public static final int gen3_cci=0x7f0900c4;
         public static final int gen3_ch=0x7f090094;
         public static final int gen3_cherries=0x7f090096;
         public static final int gen3_cherries_label=0x7f090095;
@@ -93,13 +93,13 @@ public final class R {
         public static final int gen3_chickenTenders_label=0x7f0900b0;
         public static final int gen3_chipMayoSqueeze=0x7f09008a;
         public static final int gen3_chipMayoSqueeze_label=0x7f090089;
-        public static final int gen3_cinnamonRoll=0x7f0900c0;
-        public static final int gen3_cinnamonRoll_label=0x7f0900bf;
+        public static final int gen3_cinnamonRoll=0x7f0900c3;
+        public static final int gen3_cinnamonRoll_label=0x7f0900c2;
         public static final int gen3_cms=0x7f090088;
         public static final int gen3_cp=0x7f090040;
-        public static final int gen3_cr=0x7f0900be;
-        public static final int gen3_creamCheese=0x7f0900c3;
-        public static final int gen3_creamCheese_label=0x7f0900c2;
+        public static final int gen3_cr=0x7f0900c1;
+        public static final int gen3_creamCheese=0x7f0900c6;
+        public static final int gen3_creamCheese_label=0x7f0900c5;
         public static final int gen3_ct=0x7f0900af;
         public static final int gen3_eggPatty=0x7f090093;
         public static final int gen3_eggPatty_label=0x7f090092;
@@ -119,15 +119,15 @@ public final class R {
         public static final int gen3_gds=0x7f09003d;
         public static final int gen3_ghiradelliDavinciSauce=0x7f09003f;
         public static final int gen3_ghiradelliDavinciSauce_label=0x7f09003e;
-        public static final int gen3_hamSlice=0x7f0900ba;
-        public static final int gen3_hamSlice_label=0x7f0900b9;
+        public static final int gen3_hamSlice=0x7f0900bd;
+        public static final int gen3_hamSlice_label=0x7f0900bc;
         public static final int gen3_hmg=0x7f0900b5;
         public static final int gen3_hms=0x7f0900b2;
         public static final int gen3_honeyMustardGallon=0x7f0900b7;
         public static final int gen3_honeyMustardGallon_label=0x7f0900b6;
         public static final int gen3_honeyMustardSqueeze=0x7f0900b4;
         public static final int gen3_honeyMustardSqueeze_label=0x7f0900b3;
-        public static final int gen3_hs=0x7f0900b8;
+        public static final int gen3_hs=0x7f0900bb;
         public static final int gen3_jc=0x7f0900a9;
         public static final int gen3_joyCones=0x7f0900ab;
         public static final int gen3_joyCones_label=0x7f0900aa;
@@ -186,8 +186,8 @@ public final class R {
         public static final int gen3_sausageGravyOpen_label=0x7f09009b;
         public static final int gen3_sausageGravyShelf=0x7f090099;
         public static final int gen3_sausageGravyShelf_label=0x7f090098;
-        public static final int gen3_sausagePatty=0x7f0900bd;
-        public static final int gen3_sausagePatty_label=0x7f0900bc;
+        public static final int gen3_sausagePatty=0x7f0900c0;
+        public static final int gen3_sausagePatty_label=0x7f0900bf;
         public static final int gen3_sausage_label=0x7f09006b;
         public static final int gen3_scrambledEggsOpen=0x7f0900a2;
         public static final int gen3_scrambledEggsOpen_label=0x7f0900a1;
@@ -206,7 +206,7 @@ public final class R {
         public static final int gen3_softServeOpen=0x7f090039;
         public static final int gen3_softServeOpen_label=0x7f090038;
         public static final int gen3_softServe_label=0x7f090035;
-        public static final int gen3_sp=0x7f0900bb;
+        public static final int gen3_sp=0x7f0900be;
         public static final int gen3_ss=0x7f090034;
         public static final int gen3_ss_open=0x7f090037;
         public static final int gen3_toastedSandwiches=0x7f09007e;
@@ -215,7 +215,10 @@ public final class R {
         public static final int gen3_tomato=0x7f090075;
         public static final int gen3_tomato_label=0x7f090074;
         public static final int gen3_ts=0x7f09007c;
-        public static final int gen3jul_cb=0x7f0900c7;
+        public static final int gen3_tslice=0x7f0900b8;
+        public static final int gen3_turkeySlice=0x7f0900ba;
+        public static final int gen3_turkeySlice_label=0x7f0900b9;
+        public static final int gen3jul_cb=0x7f0900ca;
         public static final int greg_dates=0x7f09000c;
         public static final int gregorian=0x7f09000d;
         public static final int gregorian_TV=0x7f09000e;
@@ -223,17 +226,17 @@ public final class R {
         public static final int julian=0x7f090010;
         public static final int julian_TV=0x7f090011;
         public static final int mcc_greeting=0x7f090007;
-        public static final int menu_about=0x7f0900cb;
-        public static final int menu_julianConverter=0x7f0900cd;
-        public static final int menu_settings=0x7f0900ca;
-        public static final int menu_storeList=0x7f0900cc;
+        public static final int menu_about=0x7f0900ce;
+        public static final int menu_julianConverter=0x7f0900d0;
+        public static final int menu_settings=0x7f0900cd;
+        public static final int menu_storeList=0x7f0900cf;
         public static final int mjc_button=0x7f090004;
         public static final int mjc_final_g_tv=0x7f090006;
         public static final int mjc_final_j_tv=0x7f090005;
         public static final int mjc_header_tv=0x7f090001;
         public static final int mjc_orig_et=0x7f090002;
         public static final int mjc_plus_et=0x7f090003;
-        public static final int storeList=0x7f0900c9;
+        public static final int storeList=0x7f0900cc;
         public static final int tl1=0x7f090008;
     }
     public static final class layout {
@@ -249,7 +252,7 @@ public final class R {
     public static final class string {
         /**  The following strings are used in About 
          */
-        public static final int about_greeting=0x7f050046;
+        public static final int about_greeting=0x7f050047;
         public static final int app_name=0x7f050000;
         public static final int baconCrumbles=0x7f05003b;
         public static final int baconStrips=0x7f05003a;
@@ -261,8 +264,8 @@ public final class R {
         public static final int cherries=0x7f050035;
         public static final int chickenTenders=0x7f05003f;
         public static final int chipMayoSqueeze=0x7f050031;
-        public static final int cinnamonRoll=0x7f050044;
-        public static final int creamCheese=0x7f050045;
+        public static final int cinnamonRoll=0x7f050045;
+        public static final int creamCheese=0x7f050046;
         /**  The following strings are used in Settings 
          */
         public static final int division_prompt=0x7f050005;
@@ -285,7 +288,7 @@ public final class R {
         public static final int gen2_whippedtopper=0x7f05000b;
         public static final int ghiradelliDavinciSauce=0x7f050018;
         public static final int gregorian=0x7f050009;
-        public static final int hamSlice=0x7f050042;
+        public static final int hamSlice=0x7f050043;
         public static final int honeyMustardGallon=0x7f050041;
         public static final int honeyMustardSqueeze=0x7f050040;
         public static final int intenseGreenAppleMix=0x7f05003e;
@@ -295,7 +298,7 @@ public final class R {
         public static final int lettuceBags=0x7f05002b;
         /**  The following strings are used in J2G 
          */
-        public static final int mcc_greeting=0x7f050047;
+        public static final int mcc_greeting=0x7f050048;
         public static final int menu_about=0x7f050002;
         public static final int menu_j2g=0x7f050004;
         public static final int menu_settings=0x7f050001;
@@ -317,7 +320,7 @@ public final class R {
         public static final int sausage=0x7f050027;
         public static final int sausageGravyOpen=0x7f050037;
         public static final int sausageGravyShelf=0x7f050036;
-        public static final int sausagePatty=0x7f050043;
+        public static final int sausagePatty=0x7f050044;
         public static final int scrambledEggsOpen=0x7f050039;
         public static final int scrambledEggsShelf=0x7f050038;
         public static final int search_prompt=0x7f050006;
@@ -329,9 +332,10 @@ public final class R {
         public static final int softServeOpen=0x7f050016;
         /**  The following strings are used in Division Store List 
          */
-        public static final int storeList_KC=0x7f050048;
+        public static final int storeList_KC=0x7f050049;
         public static final int toastedSandwiches=0x7f05002d;
         public static final int tomatoPacks=0x7f05002a;
+        public static final int turkeySlice=0x7f050042;
     }
     public static final class style {
         /** 

@@ -234,6 +234,7 @@ public class MainActivity extends Activity
 		TextView gen3_chickenTenders = (TextView) findViewById(R.id.gen3_chickenTenders);
 		TextView gen3_honeyMustardSqueeze = (TextView) findViewById(R.id.gen3_honeyMustardSqueeze);
 		TextView gen3_honeyMustardGallon = (TextView) findViewById(R.id.gen3_honeyMustardGallon);
+		TextView gen3_turkeySlice = (TextView) findViewById(R.id.gen3_turkeySlice);
 		TextView gen3_hamSlice = (TextView) findViewById(R.id.gen3_hamSlice);
 		TextView gen3_sausagePatty = (TextView) findViewById(R.id.gen3_sausagePatty);
 		TextView gen3_cinnamonRoll = (TextView) findViewById(R.id.gen3_cinnamonRoll);
@@ -415,9 +416,10 @@ public class MainActivity extends Activity
 			gen3_honeyMustardGallon.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nBOTTLE DATE");
 			gc3.add(Calendar.DAY_OF_MONTH, -30);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 8);
+			gc3.add(Calendar.DAY_OF_MONTH, 7);
+			gen3_turkeySlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");	
 			gen3_hamSlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");	
-			gc3.add(Calendar.DAY_OF_MONTH, -8);
+			gc3.add(Calendar.DAY_OF_MONTH, -7);
 			
 //TODO: Ask for clarification. CD Guide says 2 days thaw and then "8 days or ..." instead of "8 days from open or ..." like others do.		
 			gc3.add(Calendar.DAY_OF_MONTH, 10);
