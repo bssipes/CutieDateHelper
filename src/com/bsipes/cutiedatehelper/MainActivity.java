@@ -330,7 +330,7 @@ public class MainActivity extends Activity
 			gen3_tomatoPacks.setText("QTK DATED");
 			
 			gc3.add(Calendar.DAY_OF_MONTH, 4);
-			gen3_lettuceBags.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG +17");
+			gen3_lettuceBags.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nSTICKER DATE");
 			gc3.add(Calendar.DAY_OF_MONTH, -4);
 			
 			temp = (gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n";
@@ -460,7 +460,7 @@ public class MainActivity extends Activity
 					checkRollover(22)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_phaseButterSub.setText("MFG DATE + 270D");
 			gen3_phaseButterBottle.setText(String.format("%03d",
-					checkRollover(60)));
+					checkRollover(60)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_pretzels.setText(String.format("%03d",
 					checkRollover(3)) + "+4HOURS");
 			gen3_pretzelCheeseMarinara.setText(String.format("%03d",
@@ -481,7 +481,7 @@ public class MainActivity extends Activity
 			gen3_pizzaVegetables.setText("QTK DATED");
 			gen3_tomatoPacks.setText("QTK DATED");
 			gen3_lettuceBags.setText(String.format("%03d",
-					checkRollover(4)) + "\nOR MFG +17");
+					checkRollover(4)));
 			gen3_kolaches.setText(String.format("%03d",
 					checkRollover(0)) + ", " + String.format("%03d", 
 					checkRollover(1)) + ", " + String.format("%03d",
@@ -577,14 +577,16 @@ public class MainActivity extends Activity
 		{
 			divisionName = "KC";
 		}
+		
 		if (getIntent().hasExtra("gen2jul"))
 		{
 			gen2jul = bundle.getBoolean("gen2jul");
 		}
 		else
 		{
-			gen2jul = true;
+			gen2jul = false;
 		}
+		
 		if (getIntent().hasExtra("gen3jul"))
 		{
 			gen3jul = bundle.getBoolean("gen3jul");
@@ -593,6 +595,7 @@ public class MainActivity extends Activity
 		{
 			gen3jul = false;
 		}
+		
 		displayStoreNumber_TV = (TextView) findViewById(R.id.DisplayStoreNumber_TV);
 		displayStoreNumber_TV.setText(divisionName);
 		main();
