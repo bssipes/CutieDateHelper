@@ -201,6 +201,7 @@ public class MainActivity extends Activity
 		TextView gen3_frozenLemonadesShelf = (TextView) findViewById(R.id.gen3_frozenLemonadesShelf);
 		TextView gen3_frozenLemonadesOpen = (TextView) findViewById(R.id.gen3_frozenLemonadesOpen);
 		TextView gen3_phaseButterSub = (TextView) findViewById(R.id.gen3_phaseButterSub);
+		TextView gen3_phaseButterBottle = (TextView) findViewById(R.id.gen3_phaseButterBottle);
 		TextView gen3_pretzels = (TextView) findViewById(R.id.gen3_pretzels);
 		TextView gen3_pretzelCheeseMarinara = (TextView) findViewById(R.id.gen3_pretzelCheeseMarinara);
 		TextView gen3_pretzelToppings = (TextView) findViewById(R.id.gen3_pretzelToppings);
@@ -262,17 +263,15 @@ public class MainActivity extends Activity
 			gen3_ghiradelliDavinciSauce.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 			gc3.add(Calendar.DAY_OF_MONTH, -22);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 60);
-			gen3_candyPieces.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -60);
+			gen3_candyPieces.setText("MFG DATE");
 		
 			gc3.add(Calendar.DAY_OF_MONTH, 7);
 			gen3_milk.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 			gc3.add(Calendar.DAY_OF_MONTH, -7);		
 					
-			gc3.add(Calendar.DAY_OF_MONTH, 3);
+			gc3.add(Calendar.DAY_OF_MONTH, 4);
 			gen3_smoothieJuice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
-			gc3.add(Calendar.DAY_OF_MONTH, -3);
+			gc3.add(Calendar.DAY_OF_MONTH, -4);
 			
 			gen3_smoothieAddins.setText("MFG DATE");
 					
@@ -286,6 +285,10 @@ public class MainActivity extends Activity
 			gc3.add(Calendar.DAY_OF_MONTH, -22);
 				
 			gen3_phaseButterSub.setText("MFG DATE +270D");
+			
+			gc3.add(Calendar.DAY_OF_MONTH, 60);
+			gen3_phaseButterBottle.setText((gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nSTICKER DATE");
+			gc3.add(Calendar.DAY_OF_MONTH, -60);
 			
 			gc3.add(Calendar.DAY_OF_MONTH, 3);
 			gc3.add(Calendar.HOUR_OF_DAY, 4);
@@ -303,9 +306,9 @@ public class MainActivity extends Activity
 			gen3_pizzaCrust7.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
 			gc3.add(Calendar.HOUR_OF_DAY, -54);
 			
-			gc3.add(Calendar.HOUR_OF_DAY, 30);
+			gc3.add(Calendar.HOUR_OF_DAY, 36);
 			gen3_pizzaCrust16.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n"+gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
-			gc3.add(Calendar.HOUR_OF_DAY, -30);
+			gc3.add(Calendar.HOUR_OF_DAY, -36);
 			
 			gc3.add(Calendar.DAY_OF_MONTH, 8);
 			gen3_pizzaCheese.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
@@ -416,10 +419,13 @@ public class MainActivity extends Activity
 			gen3_honeyMustardGallon.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR ORIGINAL\nBOTTLE DATE");
 			gc3.add(Calendar.DAY_OF_MONTH, -30);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 7);
-			gen3_turkeySlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");	
+			gc3.add(Calendar.DAY_OF_MONTH, 8);	
 			gen3_hamSlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");	
-			gc3.add(Calendar.DAY_OF_MONTH, -7);
+			gc3.add(Calendar.DAY_OF_MONTH, -8);
+			
+			gc3.add(Calendar.DAY_OF_MONTH, 6);	
+			gen3_turkeySlice.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR DATE ON\nPACKAGE");
+			gc3.add(Calendar.DAY_OF_MONTH, -6);
 			
 //TODO: Ask for clarification. CD Guide says 2 days thaw and then "8 days or ..." instead of "8 days from open or ..." like others do.		
 			gc3.add(Calendar.DAY_OF_MONTH, 10);
@@ -440,13 +446,12 @@ public class MainActivity extends Activity
 					checkRollover(46)));
 			gen3_ghiradelliDavinciSauce.setText(String.format("%03d",
 					checkRollover(22)));
-			gen3_candyPieces.setText(String.format("%03d",
-					checkRollover(60)));
+			gen3_candyPieces.setText("MFG DATE");
 			gen3_milk.setText(String.format("%03d", 
 					checkRollover(7)));		
 			gen3_smoothieJuice.setText(String.format("%03d",
 					checkRollover(0)) + ", " + String.format("%03d", 
-					checkRollover(3)));
+					checkRollover(4)));
 			gen3_smoothieAddins.setText("MFG DATE");
 			gen3_frozenLemonadesShelf.setText(String.format("%03d",
 					checkRollover(1)) + ", " + String.format("%03d",
@@ -454,6 +459,8 @@ public class MainActivity extends Activity
 			gen3_frozenLemonadesOpen.setText(String.format("%03d", 
 					checkRollover(22)) + "\nOR ORIGINAL\nSTICKER DATE");
 			gen3_phaseButterSub.setText("MFG DATE + 270D");
+			gen3_phaseButterBottle.setText(String.format("%03d",
+					checkRollover(60)));
 			gen3_pretzels.setText(String.format("%03d",
 					checkRollover(3)) + "+4HOURS");
 			gen3_pretzelCheeseMarinara.setText(String.format("%03d",
@@ -462,7 +469,7 @@ public class MainActivity extends Activity
 			gen3_pizzaCrust7.setText(String.format("%03d",
 					checkRollover(2)) + "+6HOURS");
 			gen3_pizzaCrust16.setText(String.format("%03d",
-					checkRollover(1)) + "+6HOURS");
+					checkRollover(1)) + "+12HOURS");
 			gen3_pizzaCheese.setText(String.format("%03d",
 					checkRollover(8)));
 			gen3_pepperoni.setText(String.format("%03d",
@@ -525,6 +532,8 @@ public class MainActivity extends Activity
 					checkRollover(30)));
 			gen3_hamSlice.setText(String.format("%03d",
 					checkRollover(8)));
+			gen3_turkeySlice.setText(String.format("%03d",
+					checkRollover(6)));
 //TODO: Ask for clarification. CD Guide says "8 days or ..." instead of "8 days from open or ..." like others do.			
 			gen3_sausagePatty.setText(String.format("%03d",
 					checkRollover(2)) + ", " + String.format("%03d",

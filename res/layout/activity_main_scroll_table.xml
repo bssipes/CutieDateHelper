@@ -522,6 +522,23 @@
             android:layout_height="wrap_content"            
             android:text="phaseButterSub date" />
 			</TableRow>
+		        <TableRow
+            android:id="@+id/gen3_pbb"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_phaseButterBottle_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/phaseButterBottle" />
+			<TextView
+            android:id="@+id/gen3_phaseButterBottle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="phaseButterBottle date" />
+			</TableRow>
         <TableRow
             android:id="@+id/gen3_pr"
             android:layout_width="wrap_content"

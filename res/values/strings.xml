@@ -35,8 +35,8 @@
 
     <!-- The following strings are used in MainActivity (Gen2) -->
     <string name="gen2_welcome">Code-Dates for Division:  </string>
-    <string name="julian">Today\'s Julian Date Is: </string>
-    <string name="gregorian">Today\'s Calendar Date Is: </string>
+    <string name="julian">Today\'s Julian Date: </string>
+    <string name="gregorian">Today\'s Calendar Date: </string>
     <string name="gen2_chilichese">Chili and Cheese</string>
     <string name="gen2_whippedtopper">Whipped Topper\nand Flavor Center Creamers</string>
     <string name="gen2_wallcoolerpizzas">WallCooler Pizzas</string>
@@ -47,7 +47,7 @@
     <string name="gen2_nemo">Nemo Cakes</string>
     <string name="gen2_keylime">Edwards Keylime Pie</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>June 19, 2015</b></string>
+    <string name="cd_version_value"><b>July 19, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
     <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nSHELF UNOPENED</string>
@@ -61,11 +61,12 @@
     <string name="frozenLemonadesShelf">Frozen Lemonades Shelf</string>
     <string name="frozenLemonadesOpen">Frozen Lemonades Open</string>
     <string name="phaseButterSub">Phase Butter Sub</string>
+    <string name="phaseButterBottle">Butter Bottle</string>
     <string name="pretzels">Pretzels</string>
     <string name="pretzelCheeseMarinara">Pretzel Cheese and Marinara</string>
     <string name="pretzelToppings">Pretzel Toppings and Icing Dip</string>
-    <string name="pizzaCrust7">Pizza Crust 7</string>
-    <string name="pizzaCrust16">Pizza Crust 16</string>
+    <string name="pizzaCrust7">Pizza Crust 7"</string>
+    <string name="pizzaCrust16">Pizza Crust 16"</string>
     <string name="pizzaCheese">Pizza Cheese(Mozz, Cheddar)</string>
     <string name="pepperoni">Pepperoni</string>
     <string name="sausage">Sausage</string>
