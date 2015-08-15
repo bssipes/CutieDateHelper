@@ -13,8 +13,10 @@ public class Division
 	private int gen3_pepsaus_offset;
 	private int gen3_eggpatty_offset;
 	private int gen3_bacon_offset;
+	private int gen3_ham_offset;
+	private int gen3_sausagepatty_offset;
 	
-	public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo, int inPepSaus, int inEP, int inBacon)
+	public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo, int inPepSaus, int inEP, int inBacon, int inHam, int inSP)
 	{
 		divisionName = inName;
 		gen2_chilicheese_offset = inCC;
@@ -27,6 +29,8 @@ public class Division
 		gen3_pepsaus_offset = inPepSaus;
 		gen3_eggpatty_offset = inEP;
 		gen3_bacon_offset = inBacon;
+		gen3_ham_offset = inHam;
+		gen3_sausagepatty_offset = inSP;
 	}
 	
 	public String getD()	{return divisionName;}
@@ -40,4 +44,6 @@ public class Division
 	public int getPS() 		{return gen3_pepsaus_offset;}
 	public int getEP()		{return gen3_eggpatty_offset;}
 	public int getB()		{return gen3_bacon_offset;}
+	public int getH()		{return gen3_ham_offset;}
+	public int getSP()		{return gen3_sausagepatty_offset;}
 }

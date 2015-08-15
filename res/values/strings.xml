@@ -46,12 +46,13 @@
     <string name="gen2_wallcoolerhotpockets">WallCooler Hot Pockets</string>
     <string name="gen2_nemo">Nemo Cakes</string>
     <string name="gen2_keylime">Edwards Keylime Pie</string>
+    <string name="gen2_cakeballz">Red Velvet Cakeballz*</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>July 19, 2015</b></string>
+    <string name="cd_version_value"><b>August 7, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
-    <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nSHELF UNOPENED</string>
-    <string name="softServeOpen">SS Opened</string>
+    <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nShelf Unopened</string>
+    <string name="softServeOpen">Soft Serve Opened</string>
     <string name="moninDavinciSyrup">Monin/Davinci Syrup</string>
     <string name="ghiradelliDavinciSauce">Ghiradelli/Davinci Sauce</string>
     <string name="candyPieces">Candy Pieces</string>
@@ -64,9 +65,9 @@
     <string name="phaseButterBottle">Butter Bottle</string>
     <string name="pretzels">Pretzels</string>
     <string name="pretzelCheeseMarinara">Pretzel Cheese and Marinara</string>
-    <string name="pretzelToppings">Pretzel Toppings and Icing Dip</string>
-    <string name="pizzaCrust7">Pizza Crust 7"</string>
-    <string name="pizzaCrust16">Pizza Crust 16"</string>
+    <string name="pretzelToppings">Pretzel Toppings</string>
+    <string name="pizzaCrust7">Pizza Crust 7\"</string>
+    <string name="pizzaCrust16">Pizza Crust 16\"</string>
     <string name="pizzaCheese">Pizza Cheese(Mozz, Cheddar)</string>
     <string name="pepperoni">Pepperoni</string>
     <string name="sausage">Sausage</string>
@@ -74,12 +75,12 @@
     <string name="pizzaVegetables">Pizza Vegetables</string>
     <string name="tomatoPacks">Tomato Packs</string>
     <string name="lettuceBags">Lettuce Bags</string>
-    <string name="kolaches">Kolaches</string>
+    <string name="kolaches">Kolaches*</string>
     <string name="toastedSandwiches">Toasted Sandwiches</string>
     <string name="flatbreads">Flatbreads</string>
     <string name="ranchSqueeze">Ranch Squeeze Bottle</string>
     <string name="ranchGallon">Ranch Gallon</string>
-    <string name="chipMayoSqueeze">Chipotle Mayo Squeeze Bottle</string>
+    <string name="chipMayoSqueeze">Chipotle Mayo\n Squeeze Bottle</string>
     <string name="bbqSqueeze">BBQ Squeeze Bottle</string>
     <string name="bbqGallon">BBQ Gallon</string>
     <string name="eggPatty">Egg Patty</string>
@@ -87,25 +88,25 @@
     <string name="sausageGravyShelf">Sausage Gravy Shelf</string>
     <string name="sausageGravyOpen">Sausage Gravy Open</string>
     <string name="scrambledEggsShelf">Scrambled Eggs Shelf</string>
-    <string name="scrambledEggsOpen">Scrambled Eggs Opened</string>
+    <string name="scrambledEggsOpen">Scrambled Eggs Open</string>
     <string name="baconStrips">Bacon Strips</string>
     <string name="baconCrumbles">Bacon Crumbles</string>
     <string name="joyCones">Joy Cones</string>
     <string name="frappeBase">Frappe Base</string>
-    <string name="intenseGreenAppleMix">Intense Green Apple Mix</string>
     <string name="chickenTenders">Chicken Tenders</string>
-    <string name="honeyMustardSqueeze">Honey Mustard Squeeze</string>
-    <string name="honeyMustardGallon">Honey Mustard Gallon</string>
+    <string name="honeyMustardSqueeze">Honey Mustard\n Squeeze Bottle</string>
     <string name="turkeySlice">Turkey Slices</string>
-    <string name="hamSlice">Ham Slices</string>
-    <string name="sausagePatty">Sausage Patty</string>
+    <string name="hamSlice">Ham Slices*</string>
+    <string name="sausagePatty">Sausage Patty*</string>
     <string name="cinnamonRoll">Cinnamon Roll</string>
     <string name="creamCheese">Cream Cheese Icing</string>
+    <string name="sauceCups">Icing, Salsa,\n and Marinara Cups*</string>
     
  <!-- The following strings are used in About -->
     <string name="about_greeting">Hello and welcome to the CutieDateHelper.
         \nThis application was written by Benjamin Sipes, currently a PTC at #193.
         \nCDH is intended to help QT employees learn to properly code-date products.
+        \n\nAbove all else, remember that this is an employee-made free tool. It might not always be up to date. Always refer to the CD Guide or your superiors if you have any doubts.
         \n\nFor all Gen3 products that say "OR XYZ DATE" refer to the fact that products cannot gain shelf life magically. If you put Ranch into a squeeze bottle on 2/22/2015 and the Ranch Gallon expires 2/24/2015, the squeeze bottle will also expire 2/24/2015.
         \nTransferring product in this fashion DOES NOT extend the life.
         \n\nSpecial thanks goes out to:\n

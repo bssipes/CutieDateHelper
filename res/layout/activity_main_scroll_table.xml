@@ -298,6 +298,27 @@
                 android:layout_height="wrap_content"
                 android:text="keylimeDate" />
         </TableRow>
+        <!-- Red Velvet Cakeballz -->
+		<TableRow
+            android:id="@+id/gen2_cakeballz"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+
+            <TextView
+                android:id="@+id/gen2_cakeballz_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen2_cakeballz" />
+
+            <TextView
+                android:id="@+id/gen2_cakeballz_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cakeballzDate" />
+        </TableRow>
+        
         <!-- Gen3 Products -->
         <TableRow 
             android:id="@+id/gen3_button_row"
@@ -1085,23 +1106,6 @@
             android:layout_height="wrap_content"            
             android:text="honeyMustardSqueeze date" />
 	</TableRow>
-	<TableRow
-            android:id="@+id/gen3_hmg"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:padding="2.5dp" >
-			<TextView
-            android:id="@+id/gen3_honeyMustardGallon_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"            
-            android:text="@string/honeyMustardGallon" />
-			<TextView
-            android:id="@+id/gen3_honeyMustardGallon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"            
-            android:text="honeyMustardGallon date" />
-	</TableRow>
 	
 	<TableRow
             android:id="@+id/gen3_tslice"
@@ -1120,8 +1124,6 @@
             android:layout_height="wrap_content"            
             android:text="turkeySlice date" />
 	</TableRow>
-	
-	
 	<TableRow
             android:id="@+id/gen3_hs"
             android:layout_width="wrap_content"
@@ -1189,6 +1191,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
             android:text="creamCheese date" />
+	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_sauceCups_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/sauceCups" />
+			<TextView
+            android:id="@+id/gen3_sauceCups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="sauceCups date" />
 	</TableRow>
     </TableLayout>
 </ScrollView>
