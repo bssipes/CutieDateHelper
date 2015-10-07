@@ -28,11 +28,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int DefaultDivision_S=0x7f0900cd;
+        public static final int DefaultDivision_S=0x7f0900d0;
         public static final int DisplayStoreNumber_TV=0x7f09000b;
-        public static final int Home=0x7f0900d7;
-        public static final int SaveAndSubmit_Button=0x7f0900d1;
-        public static final int SearchDivision_S=0x7f0900ce;
+        public static final int Home=0x7f0900da;
+        public static final int SaveAndSubmit_Button=0x7f0900d4;
+        public static final int SearchDivision_S=0x7f0900d1;
         public static final int about_greeting=0x7f090000;
         public static final int cd_version=0x7f090013;
         public static final int cd_version_TV=0x7f090014;
@@ -71,7 +71,10 @@ public final class R {
         public static final int gen2_whippedTopper_date=0x7f09001c;
         public static final int gen2_whippedTopper_date_label=0x7f09001b;
         public static final int gen2_wtc=0x7f09001a;
-        public static final int gen2jul_cb=0x7f0900cf;
+        public static final int gen2jul_cb=0x7f0900d2;
+        public static final int gen3_11t=0x7f0900cd;
+        public static final int gen3_11tortilla=0x7f0900cf;
+        public static final int gen3_11tortilla_label=0x7f0900ce;
         public static final int gen3_baconCrumbles=0x7f0900ae;
         public static final int gen3_baconCrumbles_label=0x7f0900ad;
         public static final int gen3_baconStrips=0x7f0900ab;
@@ -224,7 +227,7 @@ public final class R {
         public static final int gen3_tslice=0x7f0900bb;
         public static final int gen3_turkeySlice=0x7f0900bd;
         public static final int gen3_turkeySlice_label=0x7f0900bc;
-        public static final int gen3jul_cb=0x7f0900d0;
+        public static final int gen3jul_cb=0x7f0900d3;
         public static final int greg_dates=0x7f09000c;
         public static final int gregorian=0x7f09000d;
         public static final int gregorian_TV=0x7f09000e;
@@ -232,17 +235,17 @@ public final class R {
         public static final int julian=0x7f090010;
         public static final int julian_TV=0x7f090011;
         public static final int mcc_greeting=0x7f090007;
-        public static final int menu_about=0x7f0900d4;
-        public static final int menu_julianConverter=0x7f0900d6;
-        public static final int menu_settings=0x7f0900d3;
-        public static final int menu_storeList=0x7f0900d5;
+        public static final int menu_about=0x7f0900d7;
+        public static final int menu_julianConverter=0x7f0900d9;
+        public static final int menu_settings=0x7f0900d6;
+        public static final int menu_storeList=0x7f0900d8;
         public static final int mjc_button=0x7f090004;
         public static final int mjc_final_g_tv=0x7f090006;
         public static final int mjc_final_j_tv=0x7f090005;
         public static final int mjc_header_tv=0x7f090001;
         public static final int mjc_orig_et=0x7f090002;
         public static final int mjc_plus_et=0x7f090003;
-        public static final int storeList=0x7f0900d2;
+        public static final int storeList=0x7f0900d5;
         public static final int tl1=0x7f090008;
     }
     public static final class layout {
@@ -258,7 +261,7 @@ public final class R {
     public static final class string {
         /**  The following strings are used in About 
          */
-        public static final int about_greeting=0x7f050048;
+        public static final int about_greeting=0x7f050049;
         public static final int app_name=0x7f050000;
         public static final int baconCrumbles=0x7f05003d;
         public static final int baconStrips=0x7f05003c;
@@ -303,7 +306,7 @@ public final class R {
         public static final int lettuceBags=0x7f05002d;
         /**  The following strings are used in J2G 
          */
-        public static final int mcc_greeting=0x7f050049;
+        public static final int mcc_greeting=0x7f05004a;
         public static final int menu_about=0x7f050002;
         public static final int menu_j2g=0x7f050004;
         public static final int menu_settings=0x7f050001;
@@ -339,9 +342,10 @@ public final class R {
         public static final int softServeOpen=0x7f050017;
         /**  The following strings are used in Division Store List 
          */
-        public static final int storeList_KC=0x7f05004a;
+        public static final int storeList_KC=0x7f05004b;
         public static final int toastedSandwiches=0x7f05002f;
         public static final int tomatoPacks=0x7f05002c;
+        public static final int tortilla11=0x7f050048;
         public static final int turkeySlice=0x7f050042;
     }
     public static final class style {

@@ -1209,5 +1209,22 @@
             android:layout_height="wrap_content"            
             android:text="sauceCups date" />
 	</TableRow>
+	<TableRow
+            android:id="@+id/gen3_11t"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_11tortilla_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/tortilla11" />
+			<TextView
+            android:id="@+id/gen3_11tortilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="11 tortillia date" />
+	</TableRow>
     </TableLayout>
 </ScrollView>

@@ -255,6 +255,7 @@ public class MainActivity extends Activity
 		TextView gen3_cinnamonRoll = (TextView) findViewById(R.id.gen3_cinnamonRoll);
 		TextView gen3_creamCheese = (TextView) findViewById(R.id.gen3_creamCheese);
 		TextView gen3_sauceCups = (TextView) findViewById(R.id.gen3_sauceCups);
+		TextView gen3_11tortilla = (TextView) findViewById(R.id.gen3_11tortilla);
 		
 		if (gen3jul == false) {
 			gc3.add(Calendar.DAY_OF_MONTH, 3);
@@ -447,8 +448,12 @@ public class MainActivity extends Activity
 			gc3.add(Calendar.DAY_OF_MONTH, -divisions.get(divisionName).getSP());
 			
 			gen3_cinnamonRoll.setText("QTK DATED");
-			gen3_creamCheese.setText("MFG +4Months");
+			gen3_creamCheese.setText("MFG +8Months");
 			gen3_sauceCups.setText("MFG +6Months");
+			gc3.add(Calendar.DAY_OF_MONTH, 15);
+			gen3_11tortilla.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+45D");
+			gc3.add(Calendar.DAY_OF_MONTH, -15);
+			
 		} else {
 //Gen3 products in Julian Dating			
 			gen3_softServe.setText(String.format("%03d", 
@@ -555,6 +560,8 @@ public class MainActivity extends Activity
 			gen3_cinnamonRoll.setText("QTK DATED");
 			gen3_creamCheese.setText("MFG +4Months");
 			gen3_sauceCups.setText("MFG +6Months");
+			gen3_11tortilla.setText(String.format("%03d",
+					checkRollover(15)) + "\nOR MFG+45D"); 
 		}
 		return;
 	}

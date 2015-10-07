@@ -101,6 +101,7 @@
     <string name="cinnamonRoll">Cinnamon Roll</string>
     <string name="creamCheese">Cream Cheese Icing</string>
     <string name="sauceCups">Icing, Salsa,\n and Marinara Cups*</string>
+    <string name="tortilla11">11\" Tortilla</string>
     
  <!-- The following strings are used in About -->
     <string name="about_greeting">Hello and welcome to the CutieDateHelper.
@@ -112,7 +113,7 @@
         \n\nSpecial thanks goes out to:\n
          Aejay Goehring \n
          Ashley Stapleton \n
-         Kylee Olesky \n
+         Kylee Oleksy \n
          \n
          \n
          Please address any comments, questions, or concerns to: 
