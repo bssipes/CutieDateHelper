@@ -48,7 +48,7 @@
     <string name="gen2_keylime">Edwards Keylime Pie</string>
     <string name="gen2_cakeballz">Red Velvet Cakeballz*</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>August 7, 2015</b></string>
+    <string name="cd_version_value"><b>October 9th, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
     <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nShelf Unopened</string>

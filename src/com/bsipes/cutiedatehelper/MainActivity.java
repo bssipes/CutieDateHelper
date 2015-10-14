@@ -1,4 +1,5 @@
 package com.bsipes.cutiedatehelper;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
@@ -448,10 +449,14 @@ public class MainActivity extends Activity
 			gc3.add(Calendar.DAY_OF_MONTH, -divisions.get(divisionName).getSP());
 			
 			gen3_cinnamonRoll.setText("QTK DATED");
-			gen3_creamCheese.setText("MFG +8Months");
+			
+			gc3.add(Calendar.DAY_OF_MONTH, 180);
+			gen3_creamCheese.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+8Months");
+			gc3.add(Calendar.DAY_OF_MONTH, 180);
+			
 			gen3_sauceCups.setText("MFG +6Months");
 			gc3.add(Calendar.DAY_OF_MONTH, 15);
-			gen3_11tortilla.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+45D");
+			gen3_11tortilla.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+75D");
 			gc3.add(Calendar.DAY_OF_MONTH, -15);
 			
 		} else {
@@ -558,10 +563,11 @@ public class MainActivity extends Activity
 					checkRollover(2)) + ", " + String.format("%03d",
 					checkRollover(10)));
 			gen3_cinnamonRoll.setText("QTK DATED");
-			gen3_creamCheese.setText("MFG +4Months");
+			gen3_creamCheese.setText(String.format("%03d",
+					checkRollover(180)) + "\nOR MFG+8M"); 
 			gen3_sauceCups.setText("MFG +6Months");
 			gen3_11tortilla.setText(String.format("%03d",
-					checkRollover(15)) + "\nOR MFG+45D"); 
+					checkRollover(15)) + "\nOR MFG+75D"); 
 		}
 		return;
 	}
