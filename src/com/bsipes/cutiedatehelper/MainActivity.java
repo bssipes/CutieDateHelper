@@ -351,7 +351,7 @@ public class MainActivity extends Activity
 			temp = temp.concat(gc3.get(Calendar.MONTH)+1 + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n");
 			gc3.add(Calendar.DAY_OF_MONTH, 9);
 			temp = temp.concat(gc3.get(Calendar.MONTH)+1 + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n");
-			gen3_kolaches.setText(temp + gc3.get(Calendar.HOUR_OF_DAY)+":"+String.format("%02d",gc3.get(Calendar.MINUTE)));
+			gen3_kolaches.setText(temp);
 			gc3.add(Calendar.DAY_OF_MONTH, -10);
 //TODO: Kolaches get (0,1,6 in Carolina, need to update this to division specific)			
 			
