@@ -45,10 +45,10 @@
     <string name="gen2_wallcoolerburritos">WallCooler Burritos</string>
     <string name="gen2_wallcoolerhotpockets">WallCooler Hot Pockets</string>
     <string name="gen2_nemo">Nemo Cakes</string>
-    <string name="gen2_keylime">Edwards Keylime Pie</string>
-    <string name="gen2_cakeballz">Red Velvet Cakeballz*</string>
+    <string name="gen2_keylime">Edwards Pies</string>
+    <string name="gen2_cakeballz">Red Velvet Cakeballz</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>October 9th, 2015</b></string>
+    <string name="cd_version_value"><b>November 20, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
     <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nShelf Unopened</string>
@@ -63,7 +63,7 @@
     <string name="frozenLemonadesOpen">Frozen Lemonades Open</string>
     <string name="phaseButterSub">Phase Butter Sub</string>
     <string name="phaseButterBottle">Butter Bottle</string>
-    <string name="pretzels">Pretzels</string>
+    <string name="pretzels">Pretzels*</string>
     <string name="pretzelCheeseMarinara">Pretzel Cheese and Marinara</string>
     <string name="pretzelToppings">Pretzel Toppings</string>
     <string name="pizzaCrust7">Pizza Crust 7\"</string>
@@ -75,7 +75,7 @@
     <string name="pizzaVegetables">Pizza Vegetables</string>
     <string name="tomatoPacks">Tomato Packs</string>
     <string name="lettuceBags">Lettuce Bags</string>
-    <string name="kolaches">Kolaches*</string>
+    <string name="kolaches">Kolaches</string>
     <string name="toastedSandwiches">Toasted Sandwiches</string>
     <string name="flatbreads">Flatbreads</string>
     <string name="ranchSqueeze">Ranch Squeeze Bottle</string>
@@ -92,16 +92,18 @@
     <string name="baconStrips">Bacon Strips</string>
     <string name="baconCrumbles">Bacon Crumbles</string>
     <string name="joyCones">Joy Cones</string>
-    <string name="frappeBase">Frappe Base</string>
+    <string name="frappeBase">Frappe Base(Powder)*</string>
     <string name="chickenTenders">Chicken Tenders</string>
-    <string name="honeyMustardSqueeze">Honey Mustard\n Squeeze Bottle</string>
+    <string name="honeyMustardSqueeze">Honey Mustard\n Squeeze Bottle*</string>
     <string name="turkeySlice">Turkey Slices</string>
-    <string name="hamSlice">Ham Slices*</string>
-    <string name="sausagePatty">Sausage Patty*</string>
+    <string name="hamSlice">Ham Slices</string>
+    <string name="sausagePatty">Sausage Patty</string>
     <string name="cinnamonRoll">Cinnamon Roll</string>
     <string name="creamCheese">Cream Cheese Icing</string>
-    <string name="sauceCups">Icing, Salsa,\n and Marinara Cups*</string>
-    <string name="tortilla11">11\" Tortilla</string>
+    <string name="sauceCups">Icing, Salsa,\n and Marinara Cups</string>
+    <string name="tortilla11">11\" Tortillas</string>
+    <string name="chickenSlice">Chicken Slices*</string>
+    <string name="frankSauce">Frank\'s Buffalo Sauce*</string>
     
  <!-- The following strings are used in About -->
     <string name="about_greeting">Hello and welcome to the CutieDateHelper.
@@ -122,9 +124,9 @@
     <!-- The following strings are used in J2G -->
     	<string name="mcc_greeting">
     	    \nInstructions:
-    	    \n1)Enter your date/julian day into the first box.
-    	    \n2)If converting, simply hit the button. If adding, fill in the next box with the number of DAYS to add, then hit the button.
-    	    \n3)Read your resulting dates below the button.</string>
+    	    \n1) Enter your date/julian day into the first box.
+    	    \n2) If converting, simply hit the button. If adding, fill in the next box with the number of DAYS to add, then hit the button.
+    	    \n3) Read your resulting dates below the button.</string>
 
     <!-- The following strings are used in Division Store List -->
     <string name="storeList_KC">
