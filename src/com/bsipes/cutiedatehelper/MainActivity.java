@@ -25,15 +25,15 @@ public class MainActivity extends Activity
 	public int julian = 0;
 	
 	//Refer to Division Constructor to see what all the numbers are being linked to
-//public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo, int inPepSaus, int inEP, int inBacon, int inHam, int inSP)
-	Division STL = new	Division("STL", 	5,8,8 ,7 ,15,14,31,11,8,8,8,8); //St Louis
-	Division CAR = new	Division("CAR", 	5,8,8 ,7 ,15,14,31,6 ,6,6,6,8); //Carolinas
-	Division WIC = new	Division("WIC", 	5,8,8 ,7 ,15,14,31,8 ,8,8,8,8); //Wichita
-	Division IA = new	Division("IA",  	5,8,7 ,7 ,15,14,31,8,8,8,8,8); //Iowa
-	Division ATL = new	Division("ATL", 	5,8,11,7 ,15,14,31,11,8,8,8,8); //11 days for grillfood
-	Division PHO = new	Division("PHO", 	5,8,8 ,11,15,14,31,6 ,6,6,6,6); //11 days for hotzi
-	Division KC = new	Division("KC",		5,8,8 ,11,15,14,31,8 ,8,8,8,8); //11 days for hotzi
-	Division OTHER = new Division("OTHER",	5,8,11,11,15,14,31,11,8,8,8,8); //11 days for grillfood AND 11 days for hotzi
+//public Division(String inName, int inCC, int inWCP, int inGF, int inHotzi, int inWCB, int inWCHP, int inNemo, int inPepSaus, int inEP, int inBacon, int inHam, int inSP, int inK)
+	Division STL = new	Division("STL", 	5,8,8 ,7 ,15,14,31,11,8,8,8,8,9); //St Louis
+	Division CAR = new	Division("CAR", 	5,8,8 ,7 ,15,14,31,6 ,6,6,6,8,6); //Carolinas
+	Division WIC = new	Division("WIC", 	5,8,8 ,7 ,15,14,31,8 ,8,8,8,8,6); //Wichita
+	Division IA = new	Division("IA",  	5,8,7 ,7 ,15,14,31,8,8,8,8,8,9); //Iowa
+	Division ATL = new	Division("ATL", 	5,8,11,7 ,15,14,31,11,8,8,8,8,9); //11 days for grillfood
+	Division PHO = new	Division("PHO", 	5,8,8 ,11,15,14,31,6 ,6,6,6,6,6); //11 days for hotzi
+	Division KC = new	Division("KC",		5,8,8 ,11,15,14,31,6 ,8,6,6,8,6); //11 days for hotzi
+	Division OTHER = new Division("OTHER",	5,8,11,11,15,14,31,11,8,8,8,8,9); //11 days for grillfood AND 11 days for hotzi
 	
 	public void main() 
 	{
@@ -238,6 +238,7 @@ public class MainActivity extends Activity
 		TextView gen3_chipMayoSqueeze = (TextView) findViewById(R.id.gen3_chipMayoSqueeze);
 		TextView gen3_bbqSqueeze = (TextView) findViewById(R.id.gen3_bbqSqueeze);
 		TextView gen3_bbqGallon = (TextView) findViewById(R.id.gen3_bbqGallon);
+		TextView gen3_bbqPan = (TextView) findViewById(R.id.gen3_bbqPan);
 		TextView gen3_eggPatty = (TextView) findViewById(R.id.gen3_eggPatty);
 		TextView gen3_cherries = (TextView) findViewById(R.id.gen3_cherries);
 		TextView gen3_sausageGravyShelf = (TextView) findViewById(R.id.gen3_sausageGravyShelf);
@@ -349,11 +350,11 @@ public class MainActivity extends Activity
 			temp = (gc3.get(Calendar.MONTH)+1) + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n";
 			gc3.add(Calendar.DAY_OF_MONTH, 1);
 			temp = temp.concat(gc3.get(Calendar.MONTH)+1 + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n");
-			gc3.add(Calendar.DAY_OF_MONTH, 9);
+			gc3.add(Calendar.DAY_OF_MONTH, divisions.get(divisionName).getK());
 			temp = temp.concat(gc3.get(Calendar.MONTH)+1 + "/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\n");
 			gen3_kolaches.setText(temp);
-			gc3.add(Calendar.DAY_OF_MONTH, -10);
-//TODO: Kolaches get (0,1,6 in Carolina, need to update this to division specific)			
+			gc3.add(Calendar.DAY_OF_MONTH, -1);
+			gc3.add(Calendar.DAY_OF_MONTH, -divisions.get(divisionName).getK());	
 			
 			gen3_toastedSandwiches.setText("QTK DATED");
 			gen3_flatbreads.setText("QTK DATED");
@@ -375,6 +376,10 @@ public class MainActivity extends Activity
 			gc3.add(Calendar.DAY_OF_MONTH, 90);
 			gen3_bbqGallon.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
 			gc3.add(Calendar.DAY_OF_MONTH, -90);
+			
+			gc3.add(Calendar.DAY_OF_MONTH, 14);
+			gen3_bbqPan.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR));
+			gc3.add(Calendar.DAY_OF_MONTH, -14);
 
 			temp = (gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+" - ";
 			gc3.add(Calendar.DAY_OF_MONTH, 2);
@@ -460,9 +465,9 @@ public class MainActivity extends Activity
 			gen3_11tortilla.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG+75D");
 			gc3.add(Calendar.DAY_OF_MONTH, -15);
 			
-			gc3.add(Calendar.DAY_OF_MONTH, 30);
+			gc3.add(Calendar.DAY_OF_MONTH, 56);
 			gen3_frankSauce.setText((gc3.get(Calendar.MONTH) + 1)+"/"+gc3.get(Calendar.DAY_OF_MONTH)+"/"+gc3.get(Calendar.YEAR)+"\nOR MFG DATE");
-			gc3.add(Calendar.DAY_OF_MONTH, -30);
+			gc3.add(Calendar.DAY_OF_MONTH, -56);
 			
 		} else {
 //Gen3 products in Julian Dating			
@@ -515,8 +520,7 @@ public class MainActivity extends Activity
 			gen3_kolaches.setText(String.format("%03d",
 					checkRollover(0)) + ", " + String.format("%03d", 
 					checkRollover(1)) + ", " + String.format("%03d",
-					checkRollover(10)));
-//TODO: Kolaches get (0,1,6 in Carolina, need to update this to division specific)
+					checkRollover(1+(divisions.get(divisionName).getK()))));
 			gen3_toastedSandwiches.setText("QTK DATED");
 			gen3_flatbreads.setText("QTK DATED");
 			gen3_ranchSqueeze.setText("Use Date On\nOpened Gallon");
@@ -531,6 +535,8 @@ public class MainActivity extends Activity
 					checkRollover(30))+"\nOR ORIGINAL\nGALLON DATE");
 			gen3_bbqGallon.setText(String.format("%03d",
 					checkRollover(90)));
+			gen3_bbqPan.setText(String.format("%03d",
+					checkRollover(14)));
 			gen3_eggPatty.setText(String.format("%03d",
 					checkRollover(2)) + ", " + String.format("%03d",
 					checkRollover(divisions.get(divisionName).getEP())));
@@ -576,7 +582,7 @@ public class MainActivity extends Activity
 			gen3_11tortilla.setText(String.format("%03d",
 					checkRollover(15)) + "\nOR MFG+75D");
 			gen3_frankSauce.setText(String.format("%03d",
-					checkRollover(30)) + "\nOR MFG DATE"); 
+					checkRollover(56)) + "\nOR MFG DATE"); 
 		}
 		return;
 	}

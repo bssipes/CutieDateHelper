@@ -420,6 +420,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
             android:text="bbqGallon date" />
+		</TableRow>
+	<TableRow
+            android:id="@+id/gen3_bbqp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_bbqPan_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/bbqPan" />
+			<TextView
+            android:id="@+id/gen3_bbqPan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="bbqPan date" />
 		</TableRow>	
 	<TableRow
             android:id="@+id/gen3_bbqs"

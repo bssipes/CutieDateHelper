@@ -48,7 +48,7 @@
     <string name="gen2_keylime">Edwards Pies</string>
     <string name="gen2_cakeballz">Red Velvet Cakeballz</string>
     <string name="cd_version"><b>CD Guide Date</b></string>
-    <string name="cd_version_value"><b>November 20, 2015</b></string>
+    <string name="cd_version_value"><b>December 31, 2015</b></string>
 
     <!-- The following strings are used in MainActivity (Gen3) -->
     <string name="softServe">Van/Choc Soft Serve\nand Smoothie Base Mix\nShelf Unopened</string>
@@ -69,13 +69,13 @@
     <string name="pizzaCrust7">Pizza Crust 7\"</string>
     <string name="pizzaCrust16">Pizza Crust 16\"</string>
     <string name="pizzaCheese">Pizza Cheese(Mozz, Cheddar)</string>
-    <string name="pepperoni">Pepperoni</string>
-    <string name="sausage">Sausage</string>
+    <string name="pepperoni">Pepperoni*</string>
+    <string name="sausage">Sausage*</string>
     <string name="pizzaSauce">Pizza Sauce</string>
     <string name="pizzaVegetables">Pizza Vegetables</string>
     <string name="tomatoPacks">Tomato Packs</string>
     <string name="lettuceBags">Lettuce Bags</string>
-    <string name="kolaches">Kolaches</string>
+    <string name="kolaches">Kolaches*</string>
     <string name="toastedSandwiches">Toasted Sandwiches</string>
     <string name="flatbreads">Flatbreads</string>
     <string name="ranchSqueeze">Ranch Squeeze Bottle</string>
@@ -83,26 +83,27 @@
     <string name="chipMayoSqueeze">Chipotle Mayo\n Squeeze Bottle</string>
     <string name="bbqSqueeze">BBQ Squeeze Bottle</string>
     <string name="bbqGallon">BBQ Gallon</string>
+    <string name="bbqPan">BBQ Pan*</string>
     <string name="eggPatty">Egg Patty</string>
     <string name="cherries">Cherries</string>
     <string name="sausageGravyShelf">Sausage Gravy Shelf</string>
     <string name="sausageGravyOpen">Sausage Gravy Open</string>
     <string name="scrambledEggsShelf">Scrambled Eggs Shelf</string>
     <string name="scrambledEggsOpen">Scrambled Eggs Open</string>
-    <string name="baconStrips">Bacon Strips</string>
-    <string name="baconCrumbles">Bacon Crumbles</string>
+    <string name="baconStrips">Bacon Strips*</string>
+    <string name="baconCrumbles">Bacon Crumbles*</string>
     <string name="joyCones">Joy Cones</string>
     <string name="frappeBase">Frappe Base(Powder)*</string>
     <string name="chickenTenders">Chicken Tenders</string>
     <string name="honeyMustardSqueeze">Honey Mustard\n Squeeze Bottle*</string>
     <string name="turkeySlice">Turkey Slices</string>
-    <string name="hamSlice">Ham Slices</string>
+    <string name="hamSlice">Ham Slices*</string>
     <string name="sausagePatty">Sausage Patty</string>
     <string name="cinnamonRoll">Cinnamon Roll</string>
     <string name="creamCheese">Cream Cheese Icing</string>
     <string name="sauceCups">Icing, Salsa,\n and Marinara Cups</string>
     <string name="tortilla11">11\" Tortillas</string>
-    <string name="chickenSlice">Chicken Slices*</string>
+    <string name="chickenSlice">Chicken Strips*</string>
     <string name="frankSauce">Frank\'s Buffalo Sauce*</string>
     
  <!-- The following strings are used in About -->
