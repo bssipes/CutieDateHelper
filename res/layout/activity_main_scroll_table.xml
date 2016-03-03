@@ -506,7 +506,8 @@
             android:layout_height="wrap_content"            
             android:text="chickenSlice date" />
 		</TableRow>
-	<TableRow
+<!-- 	Removed from CD guide
+		<TableRow
             android:id="@+id/gen3_ct"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -522,7 +523,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
             android:text="chickenTenders date" />
-		</TableRow>
+		</TableRow> -->
 	<TableRow
             android:id="@+id/gen3_cms"
             android:layout_width="wrap_content"
@@ -745,22 +746,23 @@
             android:text="honeyMustardSqueeze date" />
 		</TableRow>
 	<TableRow
-            android:id="@+id/gen3_sc"
+            android:id="@+id/gen3_imc"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="2.5dp" >
 			<TextView
-            android:id="@+id/gen3_sauceCups_label"
+            android:id="@+id/gen3_icingMarinaraCups_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="@string/sauceCups" />
+            android:text="@string/icingMarinaraCups" />
 			<TextView
-            android:id="@+id/gen3_sauceCups"
+            android:id="@+id/gen3_icingMarinaraCups"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
-            android:text="sauceCups date" />
-		</TableRow>
+            android:text="icingMarinaraCups date" />
+		</TableRow>	
+
 	<TableRow
             android:id="@+id/gen3_jc"
             android:layout_width="wrap_content"
@@ -1032,6 +1034,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"            
             android:text="ranchSqueeze date" />
+		</TableRow>
+	<TableRow
+            android:id="@+id/gen3_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="2.5dp" >
+			<TextView
+            android:id="@+id/gen3_salsaCups_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/salsaCups" />
+			<TextView
+            android:id="@+id/gen3_salsaCups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="salsaCups date" />
 		</TableRow>
 	<TableRow
             android:id="@+id/gen3_saus"
